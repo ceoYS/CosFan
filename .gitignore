@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+node_modules/
+dist/
+build/
+.env
+.env.*
+*.log
+
+# Existing local reference packs - keep local until curated
+cosfan_claude_design_selected_pack_v1/
+cosfan_public_ui_benchmark_pack/
+
+# Local-only heavy reference dumps
+references/mobbin/raw/_local/
+references/claude-design/raw/_local/
+outputs/_local/
