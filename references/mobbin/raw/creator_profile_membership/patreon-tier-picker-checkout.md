@@ -1,0 +1,23 @@
+# Reference: Patreon - Tier picker (stacked tier cards with price, Join, custom pledge)
+
+- source_app: Patreon (iOS)
+- mobbin_category: Subscribe / Checkout (tier selection)
+- screen_type: Membership tier comparison + selection sheet
+- target_cosfan_screen: Tier/benefit comparison + membership conversion (tier choose step)
+- user_job: "Show me each membership level, what I get, and the price, so I can pick one and join."
+- first_visible_promise: "BECOME A PATRON OF <creator>" header + the first tier card showing name, big price, and a Join button. The promise: choosing a level is simple and each level is a self-contained card.
+- primary_cta: Per-card "Join" pill (pink/brand) on every tier — the action travels with each option so there's no separate "continue" step.
+- secondary_cta: "Show more" link inside each card (expands the full benefit list); "Make a custom pledge" pill at the bottom for users who don't fit a preset tier.
+- section_order: (1) "Become a patron of <creator>" header with cover, (2) vertically stacked tier cards each: tier name → price "$X PER MONTH (+GST)" → Join → collapsed benefits with "Show more", (3) "Don't want to select a tier? Make a custom pledge" at the end.
+- trust_elements: Transparent pricing with tax note (+GST) shown upfront; benefits listed per tier so value is explicit; consistent card structure makes comparison feel fair/honest.
+- friction_removed: Each tier is independently actionable (Join lives on the card) so there's no "select then confirm" friction; collapsed benefits ("Show more") keep the list scannable while still complete; custom pledge removes the "none of these fit me" dead-end.
+- empty_loading_error_handling: Not shown; "Show more" handles benefit overflow gracefully instead of truncating value silently.
+- monetization_exposure: High and explicit — this is the paywall step, so prices and "+GST" are front-and-center. Appropriate here because the user has already opted into choosing a tier.
+- onboarding_step: Decision step of the join funnel (after profile, before payment details).
+- mobile_pattern: Vertically stacked comparison cards (not a horizontal price table — better for thumbs), per-card CTA, progressive disclosure via "Show more", bottom escape hatch (custom pledge).
+- why_relevant_to_cosfan: This is the model for CosFan's tier/benefit comparison. The vertical card stack persuades a deciding fan by making each tier feel like a complete, fair product with its price and perks attached. Per-card "Join" reduces the fear of a hidden multi-step commitment — one tap from card to action. The +GST transparency builds trust that there are no surprise charges. The custom-pledge escape hatch is a nice anti-dead-end, though optional for MVP.
+- what_to_learn: Vertical stacked tier cards with the CTA on each card = the reusable spine of CosFan's tier comparison. Progressive disclosure ("Show more" for long benefit lists) keeps it scannable. Show price and any fees transparently at this step. These all transfer directly.
+- what_not_to_copy: "Patron"/"pledge" vocabulary and the utilitarian pink-on-white chrome. Do not copy the exact card composition or tax-label wording. CosFan should use "membership"/"tier"/"perks" language and pastel collectible styling. Skip custom-pledge for MVP unless creators ask for it.
+- risk_notes: Keep tiers describing *ongoing membership benefits* (early access, exclusive posts, photocards), never per-message or per-DM unlocks — that would read as 1:1 paid-chat/PPV. Avoid any tier that implies private access to the creator.
+- MVP_action: Build CosFan's tier comparison as a vertical stack of pastel tier cards: tier name → monthly price → 3-5 perk bullets (collapsible if long) → "Join this tier" CTA per card. Drives the join decision with transparent pricing and zero hidden steps. Reusable structure; must-modify language and visual tokens; avoid per-content pricing.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/c4f9b3b6-ea7e-42da-a88c-4dd01690970e

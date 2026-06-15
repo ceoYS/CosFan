@@ -1,0 +1,22 @@
+# Reference: Artsy - Artwork detail page (title / artist / year / medium + Save)
+- source_app: Artsy
+- mobbin_category: Art marketplace / discovery (iOS)
+- screen_type: Single object detail page
+- target_cosfan_screen: Single photocard / object detail (non-NFT) — the "open one card you own" view
+- user_job: "Let me look closely at this one piece, understand exactly what it is and who made it, and decide to save/keep it."
+- first_visible_promise: Large edge-to-edge image of the work at top (hero), so the object itself is the promise before any text or price.
+- primary_cta: Contextual — in the "owned/save" framing it is the Save (heart) action; the commerce variant uses "Contact gallery" / "Purchase" as the dark full-width button.
+- secondary_cta: "View in Room" (AR/preview the piece in your space) and "Share". A green inline confirmation banner ("Artwork saved — Saving an artwork signals interest to galleries") appears on save.
+- section_order: 1) Hero image (swipeable, dot indicator) 2) Action row: Save / View in Room / Share 3) Artist name + Follow 4) Title (italic) + Year 5) Medium line ("Graphite on fine art paper laid on canvas") 6) Dimensions ("39 3/10 x 51 3/5 in") 7) Edition/uniqueness note ("This is a unique work" / "part of a limited edition set") 8) Availability/price block 9) "More info" + "Other works in show".
+- trust_elements: Precise structured metadata (medium, exact dimensions, edition status), named artist with Follow, gallery/source attribution ("From Elmarsa", "Artsnap"), uniqueness/edition language that frames scarcity as provenance not crypto-supply.
+- friction_removed: Metadata is scannable label-value lines, not a paragraph; Save is a single tap with immediate banner feedback; "View in Room" removes the "will it look right" doubt without leaving the page.
+- empty_loading_error_handling: Not shown on this screen; image carousel uses dot indicators to signal more media is loading/available.
+- monetization_exposure: Price and "Contact gallery"/"Purchase" sit BELOW the fold, after identity and provenance — commerce is present but never the first thing. Good model for keeping CosFan's collectible feel ahead of any upsell.
+- onboarding_step: N/A (post-discovery detail view).
+- mobile_pattern: Full-bleed hero carousel, icon action row, italic title + label-value metadata stack, dark full-width primary button, inline success banner.
+- why_relevant_to_cosfan: This is the cleanest reference for CosFan's single photocard detail. The hero-image-first composition says "the object is the point"; the metadata stack (creator, title, date, medium, edition) is exactly the structured "record" framing a digital photocard needs to read as a refined collectible rather than a chat reward or NFT. The Save action + green confirmation banner shows how to make "keeping" feel intentional and acknowledged. Identity-before-price ordering reduces any "this is just a paywall" fear.
+- what_to_learn: Reuse the section ORDER (image -> save -> creator -> title/date -> medium/edition -> details). Reuse label-value metadata lines for photocard attributes (creator, set/series name, issue date, edition note). Reuse the inline save-confirmation banner so saving a card to your collection feels rewarded. Must-modify: re-skin to white-first pastel, soften the harsh black button into a pastel/rounded CTA, drop the auction/gallery commerce density.
+- what_not_to_copy: Auction estimate / "Starting Bid" / "Register by" language and the gallery-sales framing — those push CosFan toward a trading/marketplace read it must avoid. Do not copy the stark black-and-white editorial styling.
+- risk_notes: Price + "Purchase"/"Contact gallery" prominence risks making the card feel for-sale/tradeable. For CosFan keep the object as something you already OWN (membership perk), not a buyable asset; suppress resale/price-for-others signals entirely.
+- MVP_action: Build photocard detail as: full-width card image hero -> Save/keep + Share row -> creator (with link) -> card title + issue date -> attribute lines (series, edition note like "Limited drop", source membership) -> optional "view full size". Apply identity-and-provenance-first ordering; show a soft confirmation when added to collection. No price, no resale, no bid.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/72878c05-7a51-4e00-886f-1bf0a1a09365 (save-banner variant: https://mobbin.com/screens/cf5a0c0b-cd55-44a4-a9c5-8100cc66efe3)

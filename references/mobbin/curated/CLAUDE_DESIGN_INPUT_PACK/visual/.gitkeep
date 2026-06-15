@@ -1,0 +1,12 @@
+# Intentionally empty (placeholder).
+#
+# No screenshots are stored in this folder — by policy and by Mobbin MCP capability.
+# Mobbin MCP returns inline preview images for on-screen viewing only; it has no
+# file/screenshot export resource. Saving those proprietary previews would violate the
+# CosFan guardrails ("never save/commit screenshots", "do not copy competitor UI/assets").
+#
+# The curated pack is a UX/IA PATTERN pack, not a pixel pack. Study each reference by
+# opening its Mobbin URL in ../VISUAL_REFERENCE_MANIFEST.md (source_pointer column).
+#
+# If a licensed pixel pack is ever required, follow "How to manually capture" in
+# ../VISUAL_REFERENCE_MANIFEST.md and keep any captures LOCAL-ONLY (git-ignored).

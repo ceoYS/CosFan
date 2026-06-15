@@ -1,0 +1,22 @@
+# Reference: Cameo - Creator-to-fans update feed ("1.2k fans")
+- source_app: Cameo (iOS)
+- mobbin_category: Creator community / Fan feed
+- screen_type: One-to-many creator update feed (creator posts short text updates; fans react + comment)
+- target_cosfan_screen: 1:N creator message channel (Bubble-style update feed)
+- user_job: As a fan of a specific creator, I want to see their short personal updates in a single dedicated feed and react/leave a quick comment.
+- first_visible_promise: Header shows the creator's name ("Chris Diamantopoulos") with avatar and "1.2k fans" directly beneath — frames a personal, creator-owned channel scaled to a known fan count.
+- primary_cta: Per-post emoji reaction (reaction chips with counts under each update)
+- secondary_cta: "Write a comment >"; "View N comments >" to expand a thread of fan comments
+- section_order: 1) Creator header (avatar + name + "1.2k fans" + back/overflow) -> 2) Reverse-chronological feed of creator posts, each: creator avatar + name + relative time ("9w") -> message text in a card -> reaction chips (counts) -> "Write a comment" / "View N comments" -> 3) Inline preview of top fan comments under each post.
+- trust_elements: Creator avatar + name as identity; "1.2k fans" as social proof of an established following; fan comments visible (community feel); creator-authored posts clearly attributed.
+- friction_removed: Reactions are one tap; commenting is optional and secondary (kept behind "Write a comment"), so the default is low-pressure reading + reacting; single dedicated feed per creator means no navigation hunting.
+- empty_loading_error_handling: Not shown; feed is a simple vertical scroll of posts; comment counts indicate threads to expand.
+- monetization_exposure: Indirect — Cameo's core is paid personalized videos; this feed itself is a free relationship-nurturing surface. A "25% off cameos today" promo appears as a creator post, showing how creators can drop offers natively into the feed.
+- onboarding_step: Not an onboarding screen; functions as the ongoing creator-fan touchpoint after following.
+- mobile_pattern: Card-per-post vertical feed; relative timestamps; reaction chips with counts; collapsible comment threads ("View N comments"); creator-owned header with fan count.
+- why_relevant_to_cosfan: Validates a creator-branded 1:N feed where the fan-count header PERSUADES (you're joining an established fandom) and is placed top to set the 1:N frame. The "react first, comment optional" hierarchy is exactly CosFan's desired light-engagement model. The native promo-as-post shows a non-intrusive way for cosplayers to announce drops/discounts inside the channel rather than via a hard paywall banner.
+- what_to_learn: The reaction-primary / comment-secondary hierarchy is the reusable lesson — it keeps the surface a broadcast, not a chat, while still letting superfans comment. The "1.2k fans" identity header is reusable (CosFan: "N supporters/fans"). A creator can self-serve a promo as a normal post — reuse as an optional "announcement" post type.
+- what_not_to_copy: Cameo's dark theme, brand, and especially its LIVE/CALL vocabulary. Posts in this feed reference "finished a Cameo Call on May 05" and "I'll be going live at 5:45 PM" — do NOT replicate any go-live / video-call / scheduled-call messaging or CTAs. Keep CosFan posts to text/photo updates only. Avoid copying the personalized-paid-video business model framing.
+- risk_notes: CAUTION — although the feed layout is safe and async, the sample content surfaces "Cameo Call" and "going live" language, which is exactly the live/call territory CosFan must avoid. Use the LAYOUT (creator header + reaction-first feed + optional comments) but strip all live/call/scheduled-call semantics. No presence indicators, no join-call buttons.
+- MVP_action: Model the creator channel header on "<creator> - N supporters" with avatar, and order each post as: text/photo -> one-tap pastel reactions -> optional "Comment" affordance kept secondary. Allow an "announcement/offer" post type so cosplayers can share drops inline (links out to the membership/photocard purchase, not a live event). Explicitly forbid any "go live"/"call" post template.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/c8ba38fd-432c-4cc2-8df9-f99fc04099f8

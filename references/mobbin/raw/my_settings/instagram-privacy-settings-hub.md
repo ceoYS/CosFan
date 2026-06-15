@@ -1,0 +1,23 @@
+# Reference: Instagram - Privacy settings hub grouped by intent
+
+- source_app: Instagram (social app — referenced for privacy-IA structure)
+- mobbin_category: Settings / Privacy
+- screen_type: Privacy settings hub (grouped navigation list by intent)
+- target_cosfan_screen: 10. MY / SETTINGS — privacy settings
+- user_job: "I want to control who can see my stuff and who can interact with me, without reading legal text — just clear categories I can drill into."
+- first_visible_promise: Titled "Settings and privacy" with two plain-language section headers — "Who can see your content" (Account privacy, Close Friends, Blocked, Hide story) and "How others can interact with you" (Messages, Tags, Comments, Restricted, Limited interactions, Hidden Words) — promises control framed as questions, not jargon.
+- primary_cta: None — navigation hub; each row drills into a focused control. Current state shown as a trailing value (Public, counts).
+- secondary_cta: Chevron rows showing current value/count (Account privacy: Public; Blocked: 1; Restricted: 0) so state is visible before drilling in.
+- section_order: WHO CAN SEE YOUR CONTENT (Account privacy, Close Friends, Blocked, Hide story and live) → HOW OTHERS CAN INTERACT WITH YOU (Messages and story replies, Tags and mentions, Comments, Sharing and remixes, Restricted, Limited interactions, Hidden Words).
+- trust_elements: Human-readable intent headers (no legalese); current values surfaced inline (transparency); Blocked / Restricted / Limited interactions grouped as visible safety tools; counts reassure the user the system is tracking their choices.
+- friction_removed: Settings framed as questions the user already has ("who can see…", "how others interact…") so they find the right control fast; current state shown without drilling in; safety controls (block/restrict) live in the same hub, not hidden.
+- empty_loading_error_handling: Trailing counts double as state (0 blocked = empty handled inline). Drill-in screens own their own empty/error states.
+- monetization_exposure: None — pure privacy/safety surface. Good model: CosFan's privacy screen should carry zero monetization.
+- onboarding_step: N/A (utility surface).
+- mobile_pattern: iOS grouped list, intent-based section headers, leading glyph + label + trailing state value/count + chevron, safety controls co-located.
+- why_relevant_to_cosfan: CosFan needs a privacy hub that lets fans control visibility and interaction (private account, blocked users, who can message/comment) — important for creator and fan safety. Framing sections as questions persuades by matching the user's actual mental model and reduces the fear/confusion privacy settings usually cause. Showing current state inline reduces friction. The IA (two axes: visibility + interaction) is directly reusable; co-locating block/restrict with privacy is a strong safety pattern.
+- what_to_learn: Frame privacy sections as plain questions ("Who can see your content", "How others can interact with you"); surface current state as a trailing value so users orient before tapping; keep safety tools (block, restrict, hidden words) inside the privacy hub; carry no monetization here.
+- what_not_to_copy: Instagram's exact feature set (Close Friends, Reels/Remix, Stories, Duet/Stitch semantics), its glyphs, and its breadth — CosFan's MVP needs far fewer controls. Don't copy the social-graph-heavy framing wholesale.
+- risk_notes: Keep it lightweight for MVP — a few high-value controls (private account, blocked users, who can message/comment) beat Instagram's long list. Avoid implying livestream/social-broadcast features CosFan doesn't have. Ensure block/restrict ties into the safety/report system, not a dead end.
+- MVP_action: Build CosFan privacy hub with two intent groups: "Who can see my page" (Private/public account, Blocked users) and "How others interact with me" (Who can message, Who can comment, Hidden words/keywords). Show current state inline. No monetization. Reuse the question-framed IA; trim to MVP controls.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/0f9d4587-5ce2-4d93-b1b2-0f9492afb50f

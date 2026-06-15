@@ -1,0 +1,23 @@
+# Reference: Flo / ClickUp / Duolingo - welcome value-proposition intro screen
+
+- source_app: Flo (primary), with ClickUp and Duolingo as corroborating examples (iOS)
+- mobbin_category: Onboarding / Welcome & Value proposition
+- screen_type: Single value-prop screen — headline + 3-bullet benefit list (each with an icon/checkmark) + single forward CTA
+- target_cosfan_screen: Welcome / value-proposition intro (what CosFan is and why to stay)
+- user_job: "In 5 seconds, tell me what this app does for me and why I should continue."
+- first_visible_promise: A clear category-defining headline plus the top 3 reasons to care. Flo: "Your cycle and health data in one place" + 3 checkmarked benefits; ClickUp: "One place for all your work." + one-line descriptor; Duolingo: "Here's what you can achieve in 3 months!" with 3 outcome bullets.
+- primary_cta: One unambiguous forward button — "Next" / "Continue" / "Get started" (full-width, single focal action).
+- secondary_cta: Typically none (or page dots if it's a short carousel) — the screen is deliberately single-decision to keep momentum.
+- section_order: 1) Headline (what it is / what you'll achieve) -> 2) 3 short benefit rows, each icon/checkmark + one line -> 3) single primary CTA. (Carousel variants add small page dots.)
+- trust_elements: Checkmarked, concrete outcomes ("See how X impacts Y", "Improve Z") feel credible and specific rather than salesy; tight 3-item scope signals the app respects the user's time.
+- friction_removed: Zero input required — one tap to proceed. The 3-benefit structure pre-empts "why should I bother?" so the user enters the rest of onboarding already convinced. Single CTA removes choice paralysis.
+- empty_loading_error_handling: N/A (static intro); only action is advance. If a carousel, dots indicate remaining intro steps so length is honest.
+- monetization_exposure: None on the intro itself — it sets up value before any account creation or paywall later in the flow.
+- onboarding_step: First or near-first screen (the "why" before the "what do you like" personalization steps).
+- mobile_pattern: Single-screen value prop with headline + 3 icon/checkmark benefit rows + one primary CTA (optionally a short dotted carousel).
+- why_relevant_to_cosfan: CosFan must instantly communicate its unusual positioning ("Bubble + Patreon + digital photocard", fan-facing) and, crucially, signal what it is NOT (not PPV/adult, not crypto/NFT, not paid 1:1 chat). This screen says "here's why CosFan is worth your time"; it persuades a cold installer to continue. Placed first so positioning lands before personalization. Reduces the fear "is this one of those sketchy creator-payment apps?" by stating wholesome, collectible, support-your-faves benefits. Reusable structure: headline + 3 benefit rows + single CTA.
+- what_to_learn: Lead onboarding with ONE crisp value screen: a headline that nails CosFan's positioning, exactly 3 benefit rows (e.g. "Follow & support your favorite cosplayers", "Collect exclusive digital photocards", "Get member-only posts & drops"), each with a small pastel icon, and a single "Get started". Keep it to one screen (or a 3-dot carousel max).
+- what_not_to_copy: Don't copy Flo's pink/health framing, ClickUp's purple, or Duolingo's green/owl — use CosFan's white-first pastel system. Avoid generic startup-speak ("supercharge your...") and avoid any wording that even hints at PPV, "exclusive access to her", crypto, or trading-card investment language. Don't overload with more than 3 benefits.
+- risk_notes: The benefit copy is where positioning succeeds or fails — sloppy wording ("exclusive content", "get closer to") can accidentally evoke the adult/PPV or fake-intimacy categories CosFan must avoid. Phrase benefits around fandom, collecting, and supporting creators, not access/intimacy. Keep "collectible", not "NFT".
+- MVP_action: Build the first onboarding screen as a single pastel-on-white value-prop: positioning headline, 3 icon+one-line benefit rows framed around following/supporting creators, collecting digital photocards, and member-only updates, and one pastel "Get started" button. Optionally a 3-card dotted carousel if one screen can't carry the positioning.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/37b688e4-33a8-4e1c-9350-16214da4cf39 (Flo value-prop); corroborating: https://mobbin.com/screens/d0deaf53-deda-4b3d-8c8a-414f706c3ff0 (ClickUp), https://mobbin.com/screens/5d9dc19e-9391-459f-a0c1-e04e7c87e3c8 (Duolingo "Here's what you can achieve")

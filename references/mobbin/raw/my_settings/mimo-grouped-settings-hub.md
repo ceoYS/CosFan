@@ -1,0 +1,23 @@
+# Reference: Mimo - Grouped settings hub with danger zone
+
+- source_app: Mimo (language-learning app)
+- mobbin_category: Settings / Account
+- screen_type: Settings list (iOS grouped-list idiom)
+- target_cosfan_screen: 10. MY / SETTINGS — account/profile settings hub
+- user_job: "I want to find and change one specific setting (reminders, password, subscription) without hunting, and know where the scary/destructive actions live."
+- first_visible_promise: A calm, scannable list under labeled section headers ("Set goal", "Friend Invites", "Notifications", "Account", "Danger zone") — the screen promises everything is organized and nothing dangerous is one mis-tap away.
+- primary_cta: None dominant — this is a navigation hub; each row is its own CTA (tap to drill in, toggle to set).
+- secondary_cta: Inline toggle (Reminders on/off) and inline value picker (Daily reminder time 10:00 AM) handled in place without leaving the screen.
+- section_order: Goal → Friend Invites (referral) → Notifications (reminder toggle + time) → Account (Change password, Restore purchases, Manage subscription) → Danger zone (Delete account, in red).
+- trust_elements: Explicit "Danger zone" header isolating destructive actions; red text only on Delete account; grouped headers signal a deliberate, safe structure; "Restore purchases" present (App Store trust convention).
+- friction_removed: Reminder time edited inline (no separate screen); referral and subscription management reachable in one tap; no settings buried more than one level deep.
+- empty_loading_error_handling: Not shown; rows are static labels so little empty-state risk. Destructive action would route to a confirm dialog (industry standard, not shown here).
+- monetization_exposure: Low-key — "Manage subscription" sits inside the Account group as a utility row, not a sales banner. Membership management is present but not pushy.
+- onboarding_step: N/A (post-onboarding utility surface).
+- mobile_pattern: iOS grouped table view, section headers in muted caps, chevron rows for navigation, inline toggles/pickers, destructive action in dedicated bottom group.
+- why_relevant_to_cosfan: This is the cleanest template for CosFan's settings hub. Each section answers one question (notifications? account? leaving?). The "Danger zone" pattern persuades through safety — it reduces the fear of accidentally deleting an account or membership, which matters for paying fans. Account/subscription management placed mid-list (utility, not upsell) fits CosFan's calm, fan-friendly tone. The structure is highly reusable as-is.
+- what_to_learn: Group settings by user intent with plain headers; keep destructive actions isolated and color-coded; handle low-stakes changes (toggles, time) inline to remove friction; place "Manage membership/subscription" as a quiet utility row so it never feels like a paywall nag.
+- what_not_to_copy: Mimo's specific labels, the "Set goal" / learning-streak rows, exact icon set, purple accent. CosFan must substitute its own pastel-blue/mint accent and fan-relevant rows (membership, photocards, notices).
+- risk_notes: Don't let "Manage subscription" read as a PPV/upsell surface — keep it a neutral utility. Avoid copying the trophy/streak gamification (off-brand for a collectible fan app). Ensure Delete account always passes through a confirm + consequence explanation (data/membership loss).
+- MVP_action: Build the settings hub as an iOS grouped list with sections: Profile/Account → Notifications → Privacy → Membership → Danger zone (sign out + delete). Drive low-stakes settings inline; route Delete/Sign-out to confirm dialogs. Use CosFan pastel accent, not purple. Reuse the structure; restyle the surface.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/bfee415b-e542-45e9-bb43-01735b0074d9

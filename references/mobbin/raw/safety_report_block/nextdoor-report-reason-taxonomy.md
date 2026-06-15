@@ -1,0 +1,23 @@
+# Reference: Nextdoor - Report reason taxonomy + "Thanks for your report" with Undo
+
+- source_app: Nextdoor
+- mobbin_category: Community / Safety
+- screen_type: Report reason picker (categorical list) -> optional note -> confirmation with undo
+- target_cosfan_screen: Report content/user — reason selection step, optional context note, and post-report confirmation
+- user_job: "Something's wrong with this post/person — let me pick why quickly, add a note if I want, and be done."
+- first_visible_promise: "What's wrong with this post?" headline over a short list of broad reason cards (Dangerous or illegal / Discriminatory / Misinformation / Disrespectful / Other) — plain-language, scannable, low cognitive load.
+- primary_cta: Tapping a reason advances (chevron-affordance rows); deeper steps end in "Submit report" (full-width)
+- secondary_cta: Close (X) / Back; on the confirmation: "Undo report" (text link) and contextual "Hide post / Mute <name> / Message <name>"
+- section_order: 1) "What's wrong with this post?" + 4-5 top-level reason cards (Other last) -> 2) optional drill-down subcategory list for the chosen reason -> 3) optional free-text note ("0/300", clearly optional) with link to Guidelines -> 4) "Submit report" -> 5) "Thanks for your report — is there anything else you'd like to do?" with Hide / Mute / Message rows, Close, and "Undo report"
+- trust_elements: Plain-language reasons (no legal jargon) lower the barrier to reporting; "Other" + optional note means no one is blocked by a missing category; linking "Guidelines" shows reports map to real rules; "Undo report" reduces fear of mis-reporting; post-report Hide/Mute lets the user also remove the content from their own view immediately
+- friction_removed: Progressive disclosure — broad reasons first, specifics only if needed; the note is explicitly OPTIONAL so users never feel forced to write; one decisive Submit; Undo removes the cost of a wrong tap
+- empty_loading_error_handling: Optional note shows a live char counter (13/300, 0/300); empty note is allowed. (CosFan: handle submit failure with retry.)
+- monetization_exposure: None.
+- onboarding_step: N/A
+- mobile_pattern: Stacked tappable reason cards with chevrons, sticky bottom Submit, confirmation as a follow-up action list; modal "Report" titlebar with X
+- why_relevant_to_cosfan: The reason list is the taxonomy backbone CosFan needs — but Nextdoor's set is neighborhood-specific. CosFan must adapt to its own risks: harassment/bullying, impersonation of a creator, sexual/explicit content (off-limits per positioning), spam/scam, "shared private/paid content without permission" (leak protection for paid photocards), self-harm, "something else". Progressive disclosure persuades hesitant reporters by keeping step one trivially easy. "Undo report" + post-report Hide/Mute reassure and give immediate relief. Reusable structure; taxonomy must be rewritten for CosFan.
+- what_to_learn: Keep the first screen to ~5 broad, plainly-worded reasons with "Something else" last; drill down only when needed; make the free-text note optional with a counter; link to Community Guidelines; ALWAYS offer Undo and an immediate "hide/mute this from my view" on the confirmation.
+- what_not_to_copy: Don't copy Nextdoor's actual categories (local-politics, "doesn't live here", racial-profiling-of-moderation, COVID/election misinformation sub-lists) — they're wrong for CosFan. Don't copy its green/navy palette or wording. Build a fandom-safety taxonomy instead.
+- risk_notes: A reason taxonomy encodes your safety policy — omitting "sexual/explicit content" or "leaked paid content" would undercut CosFan's safe + anti-PPV positioning. Avoid surveillance-heavy categories. Keep it supportive, not punitive.
+- MVP_action: Design CosFan's report flow as: plain-language reason cards (Harassment / Impersonation / Sexual or explicit content / Spam or scam / Leaked paid content / Self-harm concern / Something else) -> optional note (counter, optional) with Guidelines link -> Submit -> confirmation with Undo + "Hide this from me" + Block shortcut. Pair confirmation with the NGL reassurance copy.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/46d281f3-43ac-4451-add6-62b4509e7b7b (confirmation w/ Undo: https://mobbin.com/screens/af55ae24-ba79-445e-930c-7004303dbf8b ; optional-note step: https://mobbin.com/screens/6f78060c-f072-4c9e-bef4-59c59c359672)

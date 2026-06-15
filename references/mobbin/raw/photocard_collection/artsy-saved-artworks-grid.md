@@ -1,0 +1,22 @@
+# Reference: Artsy - Saved Artworks collection grid
+- source_app: Artsy
+- mobbin_category: Art marketplace / saved-items (iOS)
+- screen_type: Saved/owned collection grid
+- target_cosfan_screen: Photocard collection as a collectible RECORD — the main "my collection" grid of owned cards
+- user_job: "Show me everything I've kept in one place, looking like a tasteful personal collection I can browse and feel ownership over."
+- first_visible_promise: Title "Saved Artworks" + count ("4 Artworks") at top, then a clean 2-column grid of the actual works — the collection's contents are the promise.
+- primary_cta: Tap any item to open its detail; each card carries a filled heart toggle (un-save) in the corner.
+- secondary_cta: "Sort" control top-right; related views like "New Works for You" / "Recently Viewed" reuse the same grid.
+- section_order: 1) Back + title "Saved Artworks" 2) Count + Sort row 3) 2-column masonry-ish grid of cards; each card: image, artist name, italic title + year, gallery/source, status line ("Price on request" / "Increased Interest"), filled heart.
+- trust_elements: Per-item provenance under each thumbnail (artist, title, year, gallery), a visible count that makes the collection feel tangible, consistent metadata so every item reads as a catalogued record.
+- friction_removed: Two-column grid balances density with image size (you see the art clearly but many at once); metadata is compact 3-4 lines; un-save is one tap via the corner heart; Sort lets large collections stay navigable.
+- empty_loading_error_handling: Not shown here; sibling collection screens ("My Collection") show artist/artwork filter chips and an "In Progress" placeholder state, indicating how partial/loading items are labelled.
+- monetization_exposure: Light — status lines ("Price on request") hint commerce but the screen reads as a personal gallery, not a store. Good template for CosFan: a collection view with near-zero selling pressure.
+- onboarding_step: N/A (populated library state).
+- mobile_pattern: 2-column image grid, per-card metadata caption, corner heart toggle, count + sort header.
+- why_relevant_to_cosfan: This is the single best "refined personal collection" reference in the group and the explicit benchmark the brief points to. It proves a collection grid can feel curated and ownership-driven WITHOUT looking like a marketplace or NFT wallet: real images at a generous size, quiet per-item provenance, a count that makes the set feel real. The 2-column rhythm and caption pattern map directly onto a photocard grid.
+- what_to_learn: Reuse the count-in-header ("N cards") to make the collection feel owned and to motivate completion. Reuse the 2-column grid + compact caption (creator, card/set name, date). Reuse the corner toggle for save state. Reuse Sort for when collections grow. Must-modify: swap captions to photocard attributes (creator, series, edition/"drop" date), re-skin to white + pastel cards with soft rounded corners and a collectible "card" silhouette.
+- what_not_to_copy: "Price on request" / "Increased Interest" market-signal labels and the auction-adjacent tone — replace with collectible/series framing. Avoid Artsy's flat editorial grayscale; CosFan wants cute-not-childish pastel warmth.
+- risk_notes: A bare image grid with prices would slide toward a resale/marketplace read. Keep CosFan's grid about WHAT YOU OWN from creators you support; never surface price or tradeability. Guard against it feeling like an NFT wallet by leaning into "photocard" tactility (card framing, set names) over token IDs.
+- MVP_action: Build "My Collection" as a 2-column grid with header "N photocards", optional Sort/filter by creator or series, each tile = card image + creator + series/edition caption + saved indicator; tap -> photocard detail. Apply count-driven ownership feel and quiet provenance captions; pastel-white re-skin; no prices.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/7e81ec53-2904-4e06-bb1f-4b58ee067b1b (sibling "Recently Viewed" grid: https://mobbin.com/screens/18d6c388-7a31-4fc2-84a0-24b213f9900e)

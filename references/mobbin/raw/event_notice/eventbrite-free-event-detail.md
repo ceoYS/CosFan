@@ -1,0 +1,22 @@
+# Reference: Eventbrite - Free event detail (hero + organizer + date + Details)
+- source_app: Eventbrite
+- mobbin_category: Events / Ticketing (event detail page)
+- screen_type: Single-event detail / announcement page
+- target_cosfan_screen: Creator's photoshoot/meet event notice detail
+- user_job: "I saw this creator is doing an event — when is it, who's running it, what is it, and how do I take part?"
+- first_visible_promise: Full-bleed hero image of the event with a bold "Free!" badge pinned bottom-left, then the event title in large heavy type immediately below — the viewer knows the vibe and the price barrier (none) before scrolling.
+- primary_cta: "Details" (bottom sticky bar, paired with persistent "Free!" / price label on the left) — informational, opens more, NOT a forced purchase.
+- secondary_cta: "Follow" (next to organizer name), "Add to calendar" (inline, directly under the date/time block)
+- section_order: Hero image (+ price badge + favorite/share/overflow controls) -> Title -> Organizer row (avatar + name + Follow) -> Date/time block (calendar icon, bold date, lighter time range) -> Add to calendar link -> (scroll: About / Location) -> sticky price + Details bar
+- trust_elements: Named organizer with avatar and Follow affordance; explicit "Free!" so there's no hidden-cost fear; calendar icon pattern reads as a real, scheduled commitment; share/save controls signal a legit public listing.
+- friction_removed: Price anxiety killed up front ("Free!" twice — badge + sticky bar); "Add to calendar" lets the user commit the time without any account/payment step; date and time are pre-parsed into a glanceable block (no reading a paragraph).
+- empty_loading_error_handling: Not shown in this frame (populated detail state only).
+- monetization_exposure: Low and honest — price label is present but says "Free!"; the paid path exists in the system but here it's a single quiet "Details" button, not an aggressive Buy.
+- onboarding_step: N/A (content/detail screen, no onboarding)
+- mobile_pattern: Sticky bottom action bar with price-left / CTA-right; full-bleed hero with overlaid badge + circular icon controls; icon+label date block; inline secondary actions (Follow, Add to calendar).
+- why_relevant_to_cosfan: This is the cleanest "this is what is happening, here's who, here's when" anatomy in the set. Each section earns its place: hero sells the moment, the organizer row makes a human (the creator) the persuader, the date block answers the first practical question, and "Add to calendar" drives a low-commitment action. CosFan's event notice needs exactly this read order — atmosphere -> who -> when -> participate — for a creator announcing a shoot or meet.
+- what_to_learn: Front-load the date/time as a parsed icon block, not prose. Put the creator (organizer) high as the trust/persuasion anchor with a Follow. Offer a no-cost commit action ("Add to calendar" / RSVP) before any paid step. Keep one calm primary CTA in a sticky bar.
+- what_not_to_copy: Eventbrite's orange brand button, the "on Eventbrite" attribution, and the ticketing/checkout chrome behind "Details". Do not import their dense ticket-tier logic — CosFan MVP event = announcement, not checkout.
+- risk_notes: The sticky price+CTA pattern can drift toward a ticketing/PPV feel if the right side becomes "Buy"/"Get tickets". For CosFan keep it as "RSVP" / "I'm going" / "Add to calendar" so it stays an informational community notice, not a paid-ticket purchase.
+- MVP_action: Adopt the section order (hero -> title -> creator+follow -> parsed date/time -> participate action -> about/location) for CosFan's event detail. Make the primary action a free RSVP/"Going" plus "Add to calendar"; reserve any paid element for later and never make it the loudest thing. Re-skin to white-first Cool Pastel (pastel badge instead of orange, soft pill CTA).
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/46099065-c93f-42d6-9293-f4f8f9ff9a83

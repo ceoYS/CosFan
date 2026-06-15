@@ -15,3 +15,7 @@ cosfan_public_ui_benchmark_pack/
 references/mobbin/raw/_local/
 references/claude-design/raw/_local/
 outputs/_local/
+
+# Mobbin visual captures are local-only reference material.
+references/mobbin/curated/CLAUDE_DESIGN_INPUT_PACK/visual/*
+!references/mobbin/curated/CLAUDE_DESIGN_INPUT_PACK/visual/.gitkeep

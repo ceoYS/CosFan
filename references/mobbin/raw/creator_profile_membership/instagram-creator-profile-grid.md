@@ -1,0 +1,23 @@
+# Reference: Instagram - Creator profile with photo grid, stats, Follow + Subscribe
+
+- source_app: Instagram (iOS)
+- mobbin_category: Profile / User page
+- screen_type: Public creator profile (content grid + follow/subscribe)
+- target_cosfan_screen: Creator profile (about + content grid + follow/subscribe)
+- user_job: "Quickly size up this creator — their numbers, their bio, their content — and decide whether to follow or subscribe."
+- first_visible_promise: Avatar + handle + the stats triad (posts / followers / following) sit at the very top, immediately answering "how big and active is this account." The visual grid below promises "this is what their content looks like."
+- primary_cta: "Follow" — solid brand-blue button, the lowest-commitment relationship action, placed first in the button row.
+- secondary_cta: "Message" and "Subscribe" buttons beside Follow (on creator accounts), plus a chevron for more. Subscribe is the paid upgrade but visually peer to Follow, not louder.
+- section_order: (1) avatar + stats triad (posts/followers/following), (2) display name + category ("Artist") + bio + link, (3) action button row (Follow / Message / Subscribe), (4) story highlights row (circular covers), (5) content tab bar (grid / reels / tagged), (6) photo grid.
+- trust_elements: Follower count as the dominant social-proof number; verified badge; category label ("Artist") for legitimacy; story highlights show curated history; dense grid proves consistent output.
+- friction_removed: Stats and bio answer the "should I care" question before any scroll; Follow is one tap and free; highlights let users sample personality without committing; tabbed content avoids a long scroll to find media types.
+- empty_loading_error_handling: Sparse profiles (few posts) still render the full header gracefully; grid simply shows fewer cells — no broken empty state. (Seen across multiple example profiles in results.)
+- monetization_exposure: Minimal/peer-level. "Subscribe" exists but is styled equal to Follow, never dominant. Money is present but not pushy — the profile's job is identity + content, not conversion.
+- onboarding_step: Discovery/identity step — the screen a fan reaches when exploring a creator before any membership decision.
+- mobile_pattern: Stats triad header, circular story highlights, segmented content tab bar, 3-column media grid, inline button row.
+- why_relevant_to_cosfan: Instagram is the literal mental model CosFan's cosplayer/idol/model creators (and their fans) already use. The header section persuades by leading with numbers and a face — pure identity and social proof — before any ask. The content grid is the proven way to showcase visual creators (cosplay shoots, photocards). Crucially, Subscribe is peer to Follow, which matches CosFan's "open fan membership, not transactional" stance: paying is one option among friendly relationship actions, not a gate.
+- what_to_learn: The stats-triad + bio + button-row header and the 3-column visual grid are directly reusable for CosFan's visual creators. Keep the paid action (Subscribe/Join) visually equal to Follow so membership feels optional and welcoming. Story-highlight-style circular covers could become CosFan "collections" or pinned sets.
+- what_not_to_copy: Instagram's exact icon set, grid chrome, and brand styling. Don't copy the precise button arrangement or typography. CosFan needs pastel, slightly lower density, and "membership"/"perks" semantics rather than generic "Subscribe."
+- risk_notes: Keep the grid reading as a portfolio/collectible gallery, not a teaser for paid 1:1 or adult content. Ensure Subscribe routes to open tier membership, not private access.
+- MVP_action: Model CosFan's creator profile header on the IG pattern: avatar + stats triad + bio/category + a button row where Follow (free) and Join membership (paid) sit as peers, above a visual content grid. Drives both low-commitment follow and paid join without pressure. Highly reusable; must-modify to pastel + fan-membership language.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/55fae9cc-be5b-460c-97f6-1b02e6b07bef

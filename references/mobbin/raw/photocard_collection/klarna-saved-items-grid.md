@@ -1,0 +1,22 @@
+# Reference: Klarna - Saved items grid
+- source_app: Klarna
+- mobbin_category: Shopping / saved-items (iOS)
+- screen_type: Saved/wishlist collection grid
+- target_cosfan_screen: Saved / owned items grid (refined collection grid, white-first)
+- user_job: "Keep the things I care about in a clean, bright, well-spaced list I can come back to."
+- first_visible_promise: Big "Saved" title + an encouraging subline, then a 2-column grid of generous white product cards each with a brand chip and large image — feels like a tidy personal shelf.
+- primary_cta: Tap a card to open it; bookmark/save icon on each tile toggles membership in the set.
+- secondary_cta: "+" add, "Select" (bulk manage), sort/filter icon; a green "Item saved" toast confirms additions.
+- section_order: 1) "Saved" title + subline 2) 2-column grid of white rounded cards; each card: brand avatar chip (top-left), large product image, name, sometimes a "Trending" tag 3) overflow "..." per card 4) bottom tab "Saved".
+- trust_elements: Recognizable brand chips per item (source attribution), consistent card framing, a confirmation toast that acknowledges the save, optional store-count/social proof on detail tiles.
+- friction_removed: White cards on white with soft shadows keep it airy at 2-up density; brand chip gives instant recognition without reading text; one-tap bookmark; toast removes "did it save?" doubt; "Select" enables low-friction bulk cleanup.
+- empty_loading_error_handling: Sibling empty state (F&F variant) shows a friendly illustration + "No saved items — Find items from your favourite brands and save for later" + "Find items" button — a clean model for CosFan's empty collection.
+- monetization_exposure: Prices/price-drop hooks exist on some tiles, but the pure "Saved" grid foregrounds the objects and brand identity over commerce. The bright white card treatment is exactly CosFan's target aesthetic.
+- onboarding_step: N/A (saved library); empty state doubles as a soft first-use prompt.
+- mobile_pattern: 2-column white rounded-card grid, per-card brand avatar chip, corner bookmark toggle, success toast, friendly empty state.
+- why_relevant_to_cosfan: Klarna nails the "Cool Pastel Collectible OS" surface treatment CosFan wants — white-first, rounded cards, soft shadow, generous spacing, cute-not-childish. The brand-chip-per-tile pattern maps perfectly to "which creator this card is from," giving the collection structure and warmth. The save toast + the well-designed empty state are reusable for making "adding to my collection" feel rewarding and for guiding a new fan with zero cards.
+- what_to_learn: Reuse the white rounded-card-on-white grid with soft shadow as CosFan's collection surface. Reuse the per-tile creator avatar chip (instead of brand) for instant attribution. Reuse the "Item saved" toast and the illustrated empty state ("No cards yet — collect cards from creators you support"). Reuse "Select" for bulk manage once collections grow. Must-modify: swap retail price/price-drop hooks for collectible/series labels; tune palette to pastel blue/mint/lavender.
+- what_not_to_copy: Price tags, "price drop notifications", store-count and any buy/shopping affordances — those make it read as a shopping wishlist, not an owned photocard collection. Don't copy Klarna's pink brand color.
+- risk_notes: Wishlist semantics ("save for later to buy") differ from CosFan's ownership semantics ("cards you already have"). Keep copy in the OWNED register ("Your collection", "In your collection") not "Saved to buy", so it never feels like a store cart or PPV catalog.
+- MVP_action: Use Klarna's card-grid surface for CosFan's collection: white rounded tiles, creator avatar chip per card, generous spacing, save toast, and an illustrated friendly empty state with a "Discover creators" CTA. Apply the bright collectible-OS look; strip all retail/price language.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/9a2a7793-6ead-4d5d-b370-5d61059450b9 (save-toast variant: https://mobbin.com/screens/881da39d-a0ff-4cf8-bb5b-c62c699fd5ed ; empty state: https://mobbin.com/screens/c84406ec-5ed6-43c6-9799-73d9b6e9e781)

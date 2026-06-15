@@ -1,0 +1,23 @@
+# Reference: Pinterest - Search + sectioned category browse
+
+- source_app: Pinterest (iOS)
+- mobbin_category: Social / Discovery — search & category browse
+- screen_type: Category/interest browse hub (search bar + grouped category tiles)
+- target_cosfan_screen: Explore — category/genre browsing entry point
+- user_job: "I do not have a specific creator in mind — give me organized doorways (by theme/interest) so I can wander into a genre that fits my mood."
+- first_visible_promise: A search field pinned at top ("type if you know what you want") sits above titled sections of image-backed category cards (e.g. "Home decor", "Food and drink"), each card a labeled photo tile. The promise: "every interest already has a tidy door — pick one."
+- primary_cta: Tap a category card to enter that topic's feed. Search field is the alternate primary for intent-driven users.
+- secondary_cta: Camera/visual-search icon in the search bar; bottom tab bar.
+- section_order: 1) Search field (intent path) → 2) "Popular" / trending tiles → 3) titled topical sections each with a 2-up row of labeled image cards → 4) more sections on scroll → 5) bottom tab nav.
+- trust_elements: Real representative imagery on each category card (not flat icons) signals an active, populated catalog behind each door; familiar section labels lower cognitive load.
+- friction_removed: Removes the "blank search box, what do I even type?" problem by offering pre-built browse doors. Image-backed cards remove ambiguity about what a category contains. Sectioning removes one giant undifferentiated list.
+- empty_loading_error_handling: Category tiles are image-backed; in sibling screens these render dimmed placeholders first then fill — a missing image degrades to a labeled tinted card, never a broken element.
+- monetization_exposure: None on the browse hub itself.
+- onboarding_step: N/A steady-state — though strongly echoes a "pick your interests" onboarding pattern.
+- mobile_pattern: Sticky search bar with visual-search icon; vertically stacked titled sections; 2-up image-backed category cards with text label overlay; scroll-to-load more sections.
+- why_relevant_to_cosfan: This is the model for CosFan's category/genre explore door. Each section says "here is a coherent theme"; the image-backed cards persuade by showing the vibe rather than naming it; placement of search above browse respects both intent-driven and wander-driven fans. Friction reduced: the dreaded empty search box is replaced by ready-made doors. It drives the action "enter a genre feed," which seeds discovery of new creators — CosFan's explore goal. Reusable structure; must-modify the taxonomy (CosFan = cosplay genres, source series/characters, idol vs model vs photographer, event tie-ins) and the palette.
+- what_to_learn: (1) Pair a search bar with curated browse doors so neither audience is stranded. (2) Back category cards with representative imagery, not icons, to telegraph the feel. (3) Group doors into titled sections to impose a calm mental map. (4) Keep labels short and overlaid on the image.
+- what_not_to_copy: Pinterest's sheer number of categories (overwhelming) and its dim, low-contrast card text; its generic consumer taxonomy. CosFan needs a curated, subculture-specific, smaller set.
+- risk_notes: Image-backed category cards risk inheriting whatever imagery is trending — for a fan app that must avoid adult/PPV connotations, CosFan must hand-curate cover imagery per category and avoid auto-pulling the "hottest" image, which could skew suggestive.
+- MVP_action: Build an Explore hub: sticky pastel search field on top, then titled sections — "Browse by genre", "By series/character", "By creator type (cosplay / idol / model / photographer)", "Happening now (events)". Each door is a soft-rounded image-backed card with a short label. Curate cover art manually for brand safety. Search serves intent users; doors serve wanderers. Reuse the structure, replace taxonomy + palette, hand-curate covers to stay safe-and-cute.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/205983bb-dce1-41c3-b1a2-90972d90e13b

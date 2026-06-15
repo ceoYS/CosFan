@@ -1,0 +1,22 @@
+# Reference: Luma - Your Events list (date rail + thumbnail + status pill)
+- source_app: Luma
+- mobbin_category: Events (event list / upcoming)
+- screen_type: Event list grouped by date with status badges
+- target_cosfan_screen: Event list / "upcoming events" feed for a creator or for the fan's followed creators
+- user_job: "What events are coming up, when are they, and which ones am I already going to or hosting?"
+- first_visible_promise: A vertical list where each row pairs a left date chip ("OCT 10 TUE") with a colorful event thumbnail, the event title, a clock+time line, and a location line — plus a status pill ("Going" / "Hosting") in the thumbnail corner so the user instantly sees their relationship to each event.
+- primary_cta: Tapping a row -> event detail (implicit); the date rail + thumbnail is the navigation unit.
+- secondary_cta: "Upcoming / Past" toggle at top; status pills ("Going", "Hosting") double as state indicators.
+- section_order: Header ("Your Events" or "luma" + settings) -> optional Upcoming/Past tabs -> date-grouped rows, each = [date chip] [thumbnail w/ status pill] [host avatar+name] [title] [time] [location]
+- trust_elements: Host avatar + name on each row; explicit personal status ("Going"/"Hosting") gives ownership and reduces "is this for me?" doubt; real per-event imagery makes the list feel curated and alive.
+- friction_removed: Date chip on the left rail lets the eye scan chronology without reading; status pills pre-answer "am I in?"; time and location are on every row so the user rarely needs to open detail just to check the basics.
+- empty_loading_error_handling: A separate frame shows a clean "Upcoming: Today/Tomorrow" sparse state with only two events — a good lightweight low-volume layout (no fake filler).
+- monetization_exposure: Mostly none on the list; one variant shows a small price tag ("US$33") inline next to free events — a model for showing price quietly at list level without dominating, if CosFan ever lists paid events.
+- onboarding_step: N/A
+- mobile_pattern: Left date-rail chips grouping a scroll list; status pills overlaid on thumbnails; Upcoming/Past segmented control; per-row time + location metadata lines.
+- why_relevant_to_cosfan: CosFan needs an event list (per creator and/or aggregated for followed creators). Luma's date-rail-plus-thumbnail row is the cleanest, most collectible-feeling list pattern here — it reads like a tidy lineup of cards, which fits the "Collectible OS" direction. Status pills ("Going") reuse the RSVP state from the detail screen, keeping the system coherent.
+- what_to_learn: Group events by date with a left chip rail. Put time + location on every row so the list is useful without drilling in. Surface the user's RSVP/host status as a pill. Keep a sparse, honest empty/low-volume layout.
+- what_not_to_copy: Luma's specific brand marks and the "Hosting" framing if CosFan fans don't host (only creators do). Don't lean on the inline price tag as a default — keep CosFan lists announcement-first, price (if any) muted.
+- risk_notes: Mixing free and paid price tags inline can start to feel like a ticket marketplace; keep paid pricing visually quiet and secondary so the list stays a creator-announcement feed, not a storefront.
+- MVP_action: Build CosFan's event list as date-grouped rows: left date chip + small thumbnail + title + time + location + RSVP-status pill. Provide an Upcoming/Past toggle. Design a calm sparse state for fans following few creators. Restyle thumbnails and pills to pastel/white.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/8b8267f0-7fd4-4c93-8455-70be3ae9ede5

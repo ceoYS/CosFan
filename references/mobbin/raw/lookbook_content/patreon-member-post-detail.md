@@ -1,0 +1,22 @@
+# Reference: Patreon - Member post detail (image + body + tags + reactions + comments)
+- source_app: Patreon (iOS)
+- mobbin_category: Creator membership / unlocked member post detail
+- screen_type: Single post detail for a member-accessible post (long body text, inline image, tags, comment count, floating like/comment bar)
+- target_cosfan_screen: Members-only content post detail (already-unlocked state) — a creator's lookbook/update post
+- user_job: "I'm a member; let me actually read/see this exclusive drop and react or join the conversation."
+- first_visible_promise: The post body content — here the creator's written update flows directly, then an inline image (a signed photo) appears mid-body as the visual payoff. The member sees the full thing; nothing is gated because they already belong.
+- primary_cta: Like — a prominent pill at the bottom ("heart 281") that floats over the content, persistent as you scroll.
+- secondary_cta: Comment (bubble icon next to the like pill) opening the comments thread; tags are tappable for related content.
+- section_order: 1) post context header (creator avatar + post title in nav) -> 2) body text -> 3) inline image (the visual reward, with the creator's mark/signature) -> 4) "Tags" row (WWW / audio / fireside chat chips) -> 5) "94 comments" header -> 6) persistent floating like+comment bar pinned bottom.
+- trust_elements: Tags categorize and signal post type, open comment count ("94 comments") shows an active community, the inline signed/marked image reads as authentic creator output, persistent reaction count shows other members already engaged.
+- friction_removed: Like is always reachable via the floating pill (no scroll-to-find), comments open in place, tags let members pivot to similar content without leaving the reading context. Because access was resolved at the membership level, the post itself has ZERO unlock friction — the value is "you're in, enjoy".
+- empty_loading_error_handling: (not shown) — long posts load body-first then media; comment sheet has its own empty/first-comment state (see comments sheet reference).
+- monetization_exposure: None inline on the unlocked post — this is the KEY lesson. Patreon resolves payment at the tier/membership layer, so the member's reading experience is pure content + community. No "pay $X for this photo", no per-item unlock. Membership already bought the whole feed.
+- onboarding_step: N/A (post-conversion member experience).
+- mobile_pattern: Long-form post with inline media, tag chips, pinned floating reaction/comment bar, comment count header, bottom-sheet comments.
+- why_relevant_to_cosfan: This is the gold-standard for "members-only as MEMBERSHIP value, not PPV". The body GIVES the exclusive content, the inline image is the visual reward placed at the emotional peak of the text, tags help members EXPLORE more, and the floating like pill DRIVES the cheap affection action persistently. The fear removed: "did my membership get me anything?" — answered by delivering full content with no further asks. For CosFan, a fan who pays a creator's tier should land here and feel "I belong + here's the drop", never "now pay again to see the photo".
+- what_to_learn: Resolve access at membership layer, not per-post; deliver unlocked posts with no purchase chrome; place the hero image at the narrative peak; use tag chips for lateral discovery; pin a persistent low-effort reaction control with a live count.
+- what_not_to_copy: Patreon's exact long-text-heavy layout (CosFan is image-first, so flip the ratio — media leads, caption supports), the muted Patreon palette, the specific pill styling, and the "fireside chat"/podcast-centric tag vocabulary. Do not copy the floating black pill aesthetic; reskin to pastel collectible.
+- risk_notes: Keep the unlocked post strictly free of any "unlock / buy / tip-to-see" elements — that would turn membership into PPV, exactly the AVOID. Reaction must be affection (collectible heart/stamp), not a payment trigger. Tags should be content categories, never price tiers.
+- MVP_action: For unlocked members-only posts, render full content with no paywall UI; lead with the cosplay image, support with caption; add pastel reaction (persistent, live count) + comments entry; optionally tag posts (e.g. "lookbook", "behind-the-scenes", "WIP") for lateral browsing. Access state is decided once at membership, never per photo.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/4506758a-2b7a-45ee-a16d-5a43aebcffa5

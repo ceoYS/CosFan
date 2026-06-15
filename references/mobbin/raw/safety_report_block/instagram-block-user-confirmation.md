@@ -1,0 +1,23 @@
+# Reference: Instagram - Block user confirmation sheet
+
+- source_app: Instagram
+- mobbin_category: Social / Safety
+- screen_type: Bottom sheet confirmation (block account)
+- target_cosfan_screen: Block a user confirmation (from creator/fan profile or message thread)
+- user_job: "I want this person to stop contacting me and disappear from my experience, and I need to know exactly what happens and whether they'll find out."
+- first_visible_promise: Avatar of the person + "Block jdoe.mobbin?" headline — names the exact person so you can't mis-block; subhead clarifies it also blocks any other accounts they may create in future.
+- primary_cta: "Block" (full-width, bottom, brand-blue solid)
+- secondary_cta: Dismiss sheet (swipe / tap outside); a sibling variant adds "Block and report" as a text link under the primary button
+- section_order: 1) Avatar (identity confirm) -> 2) "Block <name>?" headline -> 3) one-line scope warning (also blocks future accounts) -> 4) three icon+text effect rows (can't message/find you, won't be notified, unblock anytime) -> 5) primary Block button
+- trust_elements: Person's avatar shown so action is unambiguous; explicit "They won't be notified that you blocked them" removes fear of retaliation/confrontation; "You can unblock them anytime in Settings" makes the action feel reversible/low-stakes
+- friction_removed: No multi-step flow — single sheet, single decisive tap; three short icon rows replace a wall of policy text; reversibility ("anytime") lowers commitment anxiety
+- empty_loading_error_handling: Not shown; action is instantaneous-feeling. (CosFan: show a brief toast "You blocked @name" with Undo.)
+- monetization_exposure: None — safety action is free and never gated. Good: keeps safety unconditionally accessible.
+- onboarding_step: N/A (in-context safety action)
+- mobile_pattern: Bottom sheet with rounded top corners, centered avatar, left-aligned icon list, full-width sticky CTA — thumb-reachable
+- why_relevant_to_cosfan: Each effect row answers one fear a fan or creator has when blocking. The "won't be notified" line is the single most reassuring element and is placed right where the user hesitates — it directly supports CosFan's "safe fandom" promise (no confrontation, no retaliation). Persuasion is by reassurance, not pressure: the copy makes blocking feel safe and reversible, driving the protective action without making the user feel punitive or paranoid. The avatar-confirm pattern is highly reusable for CosFan's profile/message block.
+- what_to_learn: Lead with WHO you're blocking (avatar + @handle). State the three things every blocker wants to know: (1) they lose access to you, (2) they won't be told, (3) you can undo it. Keep it to ONE sheet. Offer "Block and report" as a combined path for the worst actors so the user doesn't have to do two separate flows.
+- what_not_to_copy: Don't copy Instagram's exact icon set, blue brand color, wording, or the "blocks future accounts" scope line unless CosFan actually has that capability (don't over-promise enforcement). Avoid the destructive-red treatment if it makes the action feel scary — CosFan can keep a calm pastel-neutral block button.
+- risk_notes: Over-promising ("blocks future accounts") can erode trust if not technically true. Keep claims to what the system actually enforces. Ensure block is genuinely one-tap reversible to honor the "anytime" copy.
+- MVP_action: Build a single block-confirmation sheet: avatar + "Block @name?", three pastel icon rows ("They can't message or find you", "They won't be notified", "Unblock anytime in Settings"), one calm primary "Block" button, and a "Block & report" secondary link. Follow with an Undo toast. This is the canonical CosFan block UX.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/8d7af7e3-3c9f-4aa6-afb8-d64665c8fa06 (sibling variant with "Block and report": https://mobbin.com/screens/35d6cb7f-2676-45e7-ac89-3dff9f66a12a)

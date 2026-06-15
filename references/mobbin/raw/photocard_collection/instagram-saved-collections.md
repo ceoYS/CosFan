@@ -1,0 +1,22 @@
+# Reference: Instagram - Saved posts organized into collections
+- source_app: Instagram
+- mobbin_category: Social / saved-items (iOS)
+- screen_type: Saved-collections hub (folders) + collection detail grid
+- target_cosfan_screen: Collection organized into named sets (e.g. group by creator / series) + the set's grid of owned cards
+- user_job: "Organize the things I've kept into named groups, and dip into any group to see its contents."
+- first_visible_promise: "Saved" title, then large rounded multi-image cover tiles — each tile is a named collection (e.g. "All Posts", "Audio", "Wishlist", "art") whose cover is a 2x2 mosaic of its contents, promising organized depth at a glance.
+- primary_cta: Tap a collection cover to open it; inside, "art — 5 saved posts" with a clean image grid.
+- secondary_cta: "+" create new collection; "..." -> action sheet (Edit collection / Add to collection / Select / Delete collection); grid/reels tabs inside a collection.
+- section_order: HUB: 1) "Saved" title + "+" 2) grid of named collection tiles, each = 2x2 mosaic cover + name. DETAIL: 1) "Collection" header + "..." 2) grid/reels toggle 3) collection name + "N saved posts" 4) image grid.
+- trust_elements: Mosaic covers preview real contents (you trust what's inside before opening), per-collection counts, lock glyph on private collections signalling "only you can see this" — a strong privacy cue for a personal collection.
+- friction_removed: Multi-image covers communicate a whole set in one tile (no need to open to recall what's inside); naming + the create/edit/delete sheet make organizing lightweight; grid/reels toggle keeps mixed media tidy.
+- empty_loading_error_handling: Empty collection tiles render as light gray placeholder cells within the cover mosaic, gracefully showing "not full yet" without an error.
+- monetization_exposure: None — pure personal organization. This is the cleanest "it's mine, it's private, it's organized" reference in the group, with zero commerce noise.
+- onboarding_step: N/A (library feature).
+- mobile_pattern: Folder/collection tiles with 2x2 mosaic covers, per-folder count, lock glyph for private, "+" create, action-sheet management, grid/reels segmented toggle.
+- why_relevant_to_cosfan: As CosFan fans accumulate cards across many creators and drops, a flat grid won't scale. Instagram's named-collection model (mosaic cover + count + privacy lock) is the reusable pattern for grouping a photocard collection by creator, series, or "favorites." The lock glyph is especially valuable: it signals the collection is PRIVATE and yours, reinforcing the personal-record (not tradeable-asset) framing CosFan needs. Mosaic covers also make the collection feel rich and rewarding to fill.
+- what_to_learn: Reuse mosaic covers (preview 4 cards per set) + name + count for CosFan's "collection sets" (by creator or series). Reuse the private-lock glyph to reassure fans their collection is theirs. Reuse the lightweight create/edit/delete action sheet. Must-modify: re-skin to pastel rounded tiles; default to auto-grouping by creator so fans get structure without manual work.
+- what_not_to_copy: Instagram's exact iconography/typography and the reels/video toggle (CosFan cards are static collectibles). Don't replicate the generic gray placeholder look — give empty slots a cute "card back" placeholder instead.
+- risk_notes: Over-foldering can add friction for fans with few cards. Start flat (single grid) and introduce collection-sets only as the collection grows; keep auto-grouping by creator as the default so organization never feels like a chore.
+- MVP_action: Plan a "collections / sets" layer above the flat grid: auto-create a set per creator the fan collects, each shown as a pastel mosaic-cover tile with name + count + private lock; tap to open the set's card grid. Apply mosaic-cover + count + privacy patterns; defer manual create/edit until needed.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/ab39bbed-891a-4e65-a58d-4258c667af1d (collection detail grid: https://mobbin.com/screens/fe3e262e-5b13-4bc5-a53b-d014bd1915b1 ; manage sheet: https://mobbin.com/screens/85516ed3-7320-4ae9-8f29-e326cc28bf7d)

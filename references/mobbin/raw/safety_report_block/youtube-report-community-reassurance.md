@@ -1,0 +1,23 @@
+# Reference: YouTube - "Thanks for helping our community" report reassurance
+
+- source_app: YouTube
+- mobbin_category: Social / Video / Safety
+- screen_type: Post-report reassurance sheet with "what you can expect" + emergency guidance
+- target_cosfan_screen: Post-report reassurance / closure screen (warm, human tone variant of the confirmation)
+- user_job: "I reported a comment — was that the right thing, and is this serious enough to worry about?"
+- first_visible_promise: A warm, inclusive illustration of people + "Thanks for helping our community" — immediately frames the reporter as a positive contributor, not a snitch.
+- primary_cta: "OK" (full-width, bottom)
+- secondary_cta: None (single calm dismiss)
+- section_order: 1) Community illustration -> 2) "Thanks for helping our community" + "Your report helps us protect the community from harmful content" -> 3) bold safety callout: "If you think someone is in immediate danger, please contact local law enforcement." -> 4) "What you can expect" section with an icon row: "If this commenter has serious or repeated violations, we may temporarily restrict their ability to leave comments." -> 5) OK
+- trust_elements: "Thanks for helping our community" reframes reporting as pro-social (reduces guilt/hesitation); the immediate-danger -> contact law enforcement line shows the app knows its limits and prioritizes real-world safety (very credibility-building); honest "what you can expect" sets realistic, proportionate consequences ("may temporarily restrict") without over-promising bans
+- friction_removed: Removes moral hesitation about reporting by validating it as community help; removes uncertainty about consequences with a plain "what you can expect"; the emergency line offloads true emergencies to the right channel so users aren't left feeling the app is their only recourse
+- empty_loading_error_handling: It is the success state of the report. N/A.
+- monetization_exposure: None.
+- onboarding_step: N/A
+- mobile_pattern: Bottom sheet, friendly illustration, short reassurance copy, single full-width CTA
+- why_relevant_to_cosfan: This is the warmest, most *reassuring* confirmation tone in the set — perfect for CosFan's cute-not-childish, kind-community voice. The "helping our community" framing persuades fans to report (rather than stay silent) by removing guilt. The "immediate danger -> law enforcement" line is a responsible-platform signal CosFan should adopt verbatim-in-spirit, because it proves CosFan takes real safety seriously while honestly scoping what in-app moderation can do. The proportionate "we may temporarily restrict" copy avoids punitive overreach. Tone and structure are highly reusable.
+- what_to_learn: Frame reporting as community care ("thanks for helping keep CosFan kind/safe"). Include a clear "if someone is in immediate danger, contact local emergency services" line. State realistic, proportionate outcomes. Keep it to one warm screen with a single OK.
+- what_not_to_copy: Don't copy YouTube's illustration, red brand, exact wording, or "commenter"-specific phrasing. Don't adopt a corporate/legalistic tone — keep CosFan's pastel warmth. Match consequences to what CosFan actually enforces.
+- risk_notes: The "immediate danger" line is good practice but must point to appropriate local resources; don't imply CosFan handles emergencies itself. Keep consequence language honest and proportionate (no threats of permanent bans you won't enforce).
+- MVP_action: Use this as the *tone* template for CosFan's report confirmation: warm pastel illustration + "Thanks for helping keep CosFan safe", a gentle "If someone may be in immediate danger, contact local emergency services" note, and a one-line honest "what happens next". Merge with the NGL action-rows (Block / Guidelines / Support) and the Threads status timeline for the complete screen.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/5a673452-f483-4f67-b317-fbdd3a0bdf26

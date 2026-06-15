@@ -1,0 +1,23 @@
+# Reference: Spotify for Creators - Comment moderation queue with review states
+
+- source_app: Spotify for Creators (creator-tools app)
+- mobbin_category: Creator / Moderation
+- screen_type: Comment moderation queue (tabbed Published / Needs review + per-comment actions + destructive confirm)
+- target_cosfan_screen: 11. ADMIN / OPS — content/comment moderation queue
+- user_job: "As a creator, I want to review comments on my content, approve the good ones, and delete/block the bad ones — quickly and safely."
+- first_visible_promise: A "Comments" screen with a state filter ("Published" vs "Needs review" with an unread dot) listing comments grouped under their content title, each with reply + overflow actions — promises a clear triage workflow.
+- primary_cta: Per-comment moderation via overflow → action sheet (Block account, Delete comment, Report comment); destructive "Delete comment?" confirm with a red Delete button.
+- secondary_cta: "Reply" inline per comment; tab switch between Published and Needs review; a checkbox in the delete confirm: "Also block this user" (combine actions in one step).
+- section_order: Header (Comments) → state tabs (Published | Needs review•) → comment list grouped by content title (commenter, timestamp, text, Reply, overflow) → [on action] bottom action sheet → [on delete] confirm dialog with "Also block this user" option.
+- trust_elements: "Needs review" queue with an unread dot signals nothing is auto-published unseen (control); explicit confirm before permanent delete ("It will be permanently deleted"); "Also block this user" gives proportional escalation; Report option routes abuse to platform.
+- friction_removed: Triage split into Published vs Needs review so the creator works a focused queue; one overflow menu exposes all moderation actions; delete + block combined in a single confirm (no separate trip to block the user).
+- empty_loading_error_handling: Confirm dialog explicitly states permanence (prevents accidental loss); a clean queue would show an empty "all caught up" state (implied). Needs-review dot disappears when cleared.
+- monetization_exposure: None — pure moderation/safety surface. Correct: moderation should never carry upsell.
+- onboarding_step: N/A (operational tool).
+- mobile_pattern: iOS tabbed list + per-row overflow → action sheet → destructive confirm dialog; combined-action checkbox inside confirm; grouping list items under a parent (content title).
+- why_relevant_to_cosfan: CosFan creators need to moderate comments/reactions on their posts and photocard drops; this is the lightweight, mobile-native moderation pattern to copy. The Published/Needs-review split persuades creators they're in control (nothing slips through). The "Delete + Also block this user" combined confirm is an elegant friction-remover that also reduces the emotional cost of dealing with bad actors. Destructive-confirm-with-consequence is a must-have safety pattern. Highly reusable for CosFan's moderation queue; keep it minimal (approve/hide/delete/block/report).
+- what_to_learn: Split moderation into queue states (needs-review vs published) so work is focused; expose moderation actions via a per-item overflow sheet; always confirm destructive actions and state their permanence; offer combined escalation ("delete and block") in one step; keep moderation free of any monetization.
+- what_not_to_copy: Spotify's branding/green accent, the podcast/comments-specific framing, and any breadth beyond MVP. CosFan needs only the core triage + actions.
+- risk_notes: Keep MVP scope tight — approve/hide, delete, block, report is enough; don't build a full trust-and-safety console. Ensure block/report integrate with CosFan's existing safety system. Make destructive confirms unmissable to prevent accidental loss of fan comments. This must read as creator self-moderation, not heavy platform admin.
+- MVP_action: Build CosFan moderation queue as: tabs (Needs review• | Published) → comments grouped under post/photocard title → per-item overflow (Hide, Delete, Block user, Report) → destructive confirm with "Also block this user" checkbox. No monetization. Reuse the state-tab + action-sheet + confirm pattern; restyle to pastel.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/db770b06-a394-4ba3-95ab-db5183c8d997

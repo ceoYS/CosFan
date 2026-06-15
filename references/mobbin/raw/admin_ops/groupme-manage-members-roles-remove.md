@@ -1,0 +1,23 @@
+# Reference: GroupMe - Manage members with roles and remove action
+
+- source_app: GroupMe (group-messaging app)
+- mobbin_category: Admin / Member management
+- screen_type: Member management list (roles grouped, per-member action sheet, invite entry)
+- target_cosfan_screen: 11. ADMIN / OPS — member management
+- user_job: "As the owner of my page/community, I want to see who my members are, manage their roles, and remove or message a specific member."
+- first_visible_promise: A "Members" screen with a search field, "Invite by link" row, and members grouped by role ("Owner" / "Members") with avatars — tapping a member's overflow opens an action sheet (Direct Message, Remove from group, Transfer ownership, Make admin, Report a concern) — promises clear, role-aware control over membership.
+- primary_cta: "Add members" (prominent bottom button) to grow the roster.
+- secondary_cta: Per-member overflow action sheet (Direct Message, Remove from group, Transfer ownership, Make admin, Report a concern); "Invite by link" row; member search.
+- section_order: Header (Members + count) → Search members → Invite by link → Owner (role group) → Members (role group, each with overflow) → [on overflow] action sheet → bottom "Add members" button.
+- trust_elements: Roles explicitly grouped (Owner vs Members) so authority is legible; "Remove from group" clearly labeled (and would confirm); "Report a concern" gives a safety escape hatch; "Transfer ownership" is an explicit, deliberate action (not accidental).
+- friction_removed: Search to find a member in a large roster; invite-by-link removes manual add friction; all per-member actions consolidated in one overflow sheet; roles shown inline so no drilling to learn who's who.
+- empty_loading_error_handling: Not shown; a new page would show Owner-only with an empty Members group + the Add/Invite affordances (legible empty state). Destructive remove implies a confirm.
+- monetization_exposure: None — pure membership management. Appropriate.
+- onboarding_step: N/A (operational tool).
+- mobile_pattern: iOS list grouped by role, leading avatar + name + trailing overflow, action sheet for per-item actions, search field + invite-by-link + bottom primary "Add members".
+- why_relevant_to_cosfan: CosFan creators need to see and lightly manage their members (paying fans) — view roster, search, remove a problem member, maybe message. This is the right lightweight pattern: roster + search + per-member overflow, NOT a SaaS user-management table. Grouping by role persuades by making authority/structure obvious; "Report a concern" + "Remove" co-located reduces the fear of dealing with bad actors. Invite-by-link is a clean growth affordance. Reusable structure; CosFan should trim roles to the minimum (Owner/Member, maybe a helper/mod).
+- what_to_learn: Group members by role for instant legibility; provide search for larger rosters; consolidate per-member actions (message, remove, report, role change) in one overflow sheet; offer invite-by-link to reduce add friction; confirm destructive removals.
+- what_not_to_copy: GroupMe's messaging-app framing, blue accent, and the full role set if CosFan doesn't need it (Transfer ownership / Make admin may be out of MVP scope). Don't import group-chat semantics.
+- risk_notes: Keep MVP minimal — a fan-membership roster with view/search/remove/report is enough; avoid building team/role-management complexity. Ensure "Remove member" interacts correctly with billing (removing a paying member must handle their subscription state). Don't expose member PII beyond what a creator needs. This is membership ops, not a CRM.
+- MVP_action: Build CosFan member management as: Members header + count → search → (optional) invite-by-link → role groups (Owner, Members) → per-member overflow (Message, Remove member, Report) → bottom "Invite members". Tie Remove into membership/billing state; confirm destructive actions. Reuse the role-grouped list + overflow pattern; trim roles to MVP; restyle to pastel.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/4a2434e9-8de0-4f70-8d03-0d9ef11f3097

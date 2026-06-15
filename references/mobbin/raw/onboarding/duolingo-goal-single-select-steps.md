@@ -1,0 +1,23 @@
+# Reference: Duolingo - one-question-per-screen onboarding (goal / level / motivation)
+
+- source_app: Duolingo (iOS)
+- mobbin_category: Onboarding
+- screen_type: Single-question, single-select option list per screen, with top progress bar and a mascot speech-bubble prompt
+- target_cosfan_screen: Personalization onboarding — lightweight preference questions (e.g. "What brings you to CosFan?", "How do you like to support creators?")
+- user_job: "Answer a couple of quick questions so the app feels made for me — without filling a form."
+- first_visible_promise: Each screen asks exactly ONE conversational question ("What's your daily learning goal?", "What would you like to learn?") via a friendly mascot bubble, with a visible progress bar promising the flow is short and finite.
+- primary_cta: Full-width "Continue" / "I'm committed" pinned at the bottom; on some steps it stays disabled until a choice is made.
+- secondary_cta: Back arrow (top-left) to revise the previous answer; some steps offer "RECOMMENDED" pre-highlighted options to guide the unsure.
+- section_order: Per screen: 1) progress bar -> 2) mascot + question bubble -> 3) vertical list of tappable option rows (with small icons / right-aligned qualifiers like "Casual / Regular / Serious") -> 4) sticky Continue. Screens chain: goal -> prior level -> daily-goal -> start point -> habit/streak framing.
+- trust_elements: Mascot warmth + plain-language questions lower intimidation; progress bar sets honest expectations; "RECOMMENDED" tag and habit framing ("Now let's help you build a habit...") show the app is guiding, not interrogating.
+- friction_removed: One decision per screen = near-zero cognitive load; tap a row and you're advanced (or one tap + Continue). Right-aligned qualifier words ("Casual/Serious") let users self-identify fast. Progress bar reduces "how long is this?" drop-off.
+- empty_loading_error_handling: Single-select means a valid state is one tap away; "RECOMMENDED" pre-frames a sensible default. Continue gating prevents empty submission.
+- monetization_exposure: Free trial / Pro paywall appears LATER in the chain, after the user has invested several answers (commitment-and-consistency); the question steps themselves are monetization-free.
+- onboarding_step: The spine of the entire pre-account onboarding; multiple of these run before signup.
+- mobile_pattern: One-question-per-screen wizard, top progress bar, mascot prompt, single-select rows with qualifier labels, sticky Continue, optional "RECOMMENDED" default.
+- why_relevant_to_cosfan: Shows how to gather personalization signal WITHOUT a heavy form, in a tone that is warm and approachable — matching CosFan's "cute-not-childish". Each question persuades the user that the app is tailoring itself to them; the progress bar persuades them to finish. Placed before commitment so the user is invested before any paid prompt. Reusable structure: progress bar + single question + option rows + sticky continue, with the paywall deferred until after investment.
+- what_to_learn: Keep any preference questions to ONE per screen with a clear progress bar. Use plain conversational questions ("What brings you to CosFan?"). Offer 3-5 tappable rows; pre-highlight a sensible default for the unsure. Defer any subscribe/paywall prompt until AFTER the user has answered a few questions (built-up commitment). Allow back-navigation to revise.
+- what_not_to_copy: Duolingo's saturated green + cartoon owl is too childish/branded for CosFan — use CosFan's pastel system and a softer, more collectible visual tone (no loud mascot). Don't make the chain too long; CosFan should keep it to 2-3 questions max so onboarding stays light. Avoid copying the streak/gamification pressure wholesale (can feel manipulative for a fan app).
+- risk_notes: Long single-select chains inflate time-to-value and can feel like a quiz; cap the number of steps. Over-cute mascot styling risks the "childish" failure mode CosFan explicitly wants to avoid — keep tone playful but premium.
+- MVP_action: If CosFan adds preference questions, build them as a short (<=3) one-question-per-screen wizard: thin pastel progress bar, a single friendly question, 3-5 tappable option rows with optional small icons, one pre-highlighted default, sticky pastel Continue. Keep any membership/paywall prompt strictly after this chain.
+- local_reference_path_or_source_pointer: https://mobbin.com/flows/b0b4f93f-5637-46ec-9d77-49ecda6b991d (Duolingo Onboarding; goal/level/daily-goal single-select screens)

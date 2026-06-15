@@ -1,0 +1,23 @@
+# Reference: Coffee Meets Bagel - Account settings with push-notification toggles
+
+- source_app: Coffee Meets Bagel (dating app — referenced for STRUCTURE ONLY, not category)
+- mobbin_category: Settings / Account
+- screen_type: Settings list combining account rows + grouped notification toggles
+- target_cosfan_screen: 10. MY / SETTINGS — account settings hub + notification settings entry
+- user_job: "I want to manage my account state (active/paused), sign-in, and turn specific push notifications on or off — all in clearly separated groups."
+- first_visible_promise: Two distinct labeled zones — "ACCOUNT" (preferences, account state, sign-in method, language) and "PUSH NOTIFICATIONS" (per-type toggles like Daily Alert, New Likes) — the screen promises account control and granular notification control without mixing them.
+- primary_cta: Inline state control "Pause account" (pill button) as the most prominent account action.
+- secondary_cta: Per-row toggles for each push notification type; chevron rows for deeper preferences and Language.
+- section_order: ACCOUNT (Preferences, Active/Pause, Sign in with Apple, Restore Purchases, Language) → ADVANCED (Incognito mode) → PUSH NOTIFICATIONS (Daily Alert, New Likes, ... per-type toggles).
+- trust_elements: "Sign in with Apple" surfaced as account method (privacy trust); muted "ADVANCED" lock icon signals careful gating; "Restore Purchases" present; per-type notification control respects user autonomy (no all-or-nothing spam).
+- friction_removed: Account pause done inline via pill (no deep flow); each notification type toggled in place; advanced/incognito separated so casual users aren't overwhelmed.
+- empty_loading_error_handling: Not shown; toggles are immediate-state controls. A long notification list scrolls — CosFan should cap/group types to avoid a wall of switches.
+- monetization_exposure: Indirect — "Restore Purchases" and account state hint at paid tiers, but no aggressive upsell. Kept utility-grade.
+- onboarding_step: N/A (post-onboarding).
+- mobile_pattern: iOS grouped list, muted section headers, mix of pill action / toggle / chevron rows, advanced features visually demoted under a lock glyph.
+- why_relevant_to_cosfan: Demonstrates per-type notification granularity (CosFan fans will want to mute marketing but keep new-post/new-photocard alerts) inside the same scannable grouped list as account controls. The pill-style inline account-state control is a clean pattern for "pause/manage membership." Section separation persuades by reducing overwhelm — each group is a single decision domain. Reusable structure; granularity model is the key takeaway.
+- what_to_learn: Offer per-notification-type toggles (not one master switch); separate "advanced" settings so the default view stays calm; use an inline pill for reversible account-state changes; keep push-notification settings reachable directly from the main settings hub.
+- what_not_to_copy: Anything dating-specific — "New Likes", "Incognito mode (get shown to people you've liked first)", "Daily Noon Alert", the matchmaking framing. These read as dating/parasocial-pursuit and must be avoided for CosFan's fan-membership positioning.
+- risk_notes: HIGH category-confusion risk — do not borrow dating verbs or the "likes/incognito" mental model; CosFan is NOT a dating app. Strip all matchmaking semantics; keep only the neutral settings architecture (account group + per-type notification toggles + advanced separation).
+- MVP_action: For CosFan notification settings, implement grouped per-type toggles: New post from creators I follow, New photocard drops, Event/notice announcements, Membership/billing, Marketing (default off). Keep an Account group with manage-membership and language. Borrow the grouped-toggle + inline-pill structure ONLY; replace every dating label.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/a0dea3ec-9b34-4539-b58a-afce05c15507

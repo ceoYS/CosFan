@@ -1,0 +1,23 @@
+# Reference: Yahoo News - "Select 5 or more topics" interest chip grid
+
+- source_app: Yahoo News (iOS)
+- mobbin_category: Onboarding / Personalization / Selecting & Choosing
+- screen_type: Categorized multi-select chip/pill grid with explicit minimum and a sticky primary button
+- target_cosfan_screen: Interest onboarding — pick cosplay genres / fandom categories to personalize feed
+- user_job: "Tell the app what kinds of cosplay/content I care about so my feed isn't generic."
+- first_visible_promise: "Select 5 or more topics" + subcopy "Start personalizing your feed. You'll still see important news from all topics." — states the minimum AND defuses fear of missing out by saying non-selected content still appears.
+- primary_cta: Sticky bottom "Continue" (high-contrast pill, always visible above the fold of chips).
+- secondary_cta: None explicit; the reassurance subcopy effectively acts as the "you can't get this wrong" pressure-release. Sections let users jump conceptually instead of skipping.
+- section_order: 1) Title with explicit minimum -> 2) Reassurance subcopy -> 3) "Most Popular" cluster of filled/high-emphasis chips -> 4) Labeled category sections (Lifestyle, Health, ...) of selectable pills -> 5) sticky "Continue".
+- trust_elements: "You'll still see important news from all topics" reassures that choosing is additive, not exclusionary; grouping under familiar category headers makes the taxonomy feel legible and trustworthy.
+- friction_removed: Chips = single-tap selection, no typing. Grouping by category reduces scan cost. Explicit "5 or more" sets a clear finish line. Reassurance copy removes the fear that picking narrows your world too much.
+- empty_loading_error_handling: "Most Popular" defaults give an instant safe starting set; sticky Continue likely disabled until the minimum is met (clear gating). Categories ensure the list is never an undifferentiated wall.
+- monetization_exposure: None — personalization is free and precedes any paywall.
+- onboarding_step: Early/mid onboarding personalization step before first feed render.
+- mobile_pattern: Section-grouped multi-select pills, explicit minimum, reassurance microcopy, sticky high-contrast primary button.
+- why_relevant_to_cosfan: This is the model for CosFan's GENRE/interest step (cosplay categories, fandoms, idol/photoshoot/subculture lanes) that complements the creator-follow step. The section says "pick the lanes you care about"; it persuades the browser who has no single must-follow creator yet. Placed before the feed so cold-start personalization works. The reassurance line is the key lesson: it reduces commitment anxiety. Reusable structure: minimum + grouped chips + reassurance + sticky continue.
+- what_to_learn: Group genres under clear headers (e.g. "Anime cosplay", "Game cosplay", "Idol", "Photoshoot/Model"). State a minimum ("Pick 5+"). Add a reassurance line so users don't fear over-narrowing. Keep a high-contrast sticky Continue that gates on the minimum. Lead with a "Popular" cluster for instant momentum.
+- what_not_to_copy: Yahoo's violet sticky button and near-black filled chips are off-palette for CosFan — recolor to pastel selection states on white. Do not copy the news taxonomy or exact label wording. Avoid an overly text-dense chip wall; CosFan should consider thumbnail-backed genre chips for a more collectible, visual feel.
+- risk_notes: Pure text chips can feel utilitarian/news-app-like rather than cute-collectible; balance density with CosFan's "practical density, cute-not-childish" by adding small genre icons or pastel fills. Keep it clearly fandom/interest framing, never demographic or "content rating" framing.
+- MVP_action: Build "What are you into?" genre step: title with "Pick 5+", reassurance subcopy ("You can change this anytime; you'll still discover new creators"), genres grouped under pastel section headers as tappable chips with subtle fills/icons, sticky pastel Continue enabled at the threshold, lead cluster = most-popular genres.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/edd230f6-18a7-4a4a-a8d8-4a6a56ffcb01 (Yahoo News "Select 5 or more topics"; flow https://mobbin.com/flows/75d8f931-4bf4-4714-a132-62bbbd7ecea9)

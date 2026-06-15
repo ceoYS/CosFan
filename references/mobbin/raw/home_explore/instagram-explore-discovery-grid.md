@@ -1,0 +1,23 @@
+# Reference: Instagram - Explore discovery grid
+
+- source_app: Instagram (iOS)
+- mobbin_category: Social — explore / discovery
+- screen_type: Dense discovery image grid (3-column) with contextual tabs
+- target_cosfan_screen: Explore — discovery of new creators via their visual content
+- user_job: "Surface fresh visual content from people I do not yet follow, packed tight so I can scan a lot fast and find someone new to follow."
+- first_visible_promise: A 3-column edge-to-edge grid of photos (occasional taller/video tiles) fills the screen immediately under a search field; when entered from a topic, a row of context tabs (`For you / Accounts / Audio / Tags / Places`) sits below the search. Promise: "endless new material, and several ways to slice it."
+- primary_cta: Tap a tile to open the post/creator. Search field for intent.
+- secondary_cta: Context tabs (For you / Accounts / Tags / Places) to pivot the same query; long-press tile for preview.
+- section_order: 1) Search field → 2) (when topical) context tabs row → 3) dense 3-col grid with mixed tile sizes (some 2x video tiles) → 4) bottom tab nav.
+- trust_elements: Volume itself signals an active platform; "Accounts" tab surfaces real profiles you can vet; tiles carry subtle type indicators (reel/carousel icon) so users know what they will get.
+- friction_removed: No copy to read; instant visual scanning. Mixed tile sizes add rhythm to a same-type grid. Context tabs remove the need to re-search to switch between people/tags/places.
+- empty_loading_error_handling: Grid streams in tile-by-tile; a "hidden/seen" eye icon appears on some tiles (content-control state), showing graceful per-tile state handling rather than a global error.
+- monetization_exposure: Minimal/none in the core grid view; this surface is about reach, not selling.
+- onboarding_step: N/A steady-state discovery.
+- mobile_pattern: 3-column high-density grid with occasional 1x2 feature tiles; sticky search + context tabs; long-press peek; tap-to-open.
+- why_relevant_to_cosfan: This is the high-density end of the discovery spectrum and a good counter-reference to Pinterest's airier masonry. The grid says "there is a deep catalog of new creators"; the `Accounts` tab persuades by routing curiosity straight to a followable profile; mixed tile sizes keep a single content type lively. Friction reduced: scanning is effortless and switching facets (people vs tags) needs no re-typing. It drives "discover and follow a new creator." Reusable as the pivot-tabs idea; must-modify the density — IG's 3-col edge-to-edge is busier than CosFan's calm pastel brief, so CosFan likely uses 2-col with more gutter while keeping the facet tabs.
+- what_to_learn: (1) Context tabs (`For you / Creators / Tags / Events`) let one explore surface serve many intents without re-searching. (2) Occasional feature tiles break grid monotony. (3) Per-tile type indicators set expectations before the tap. (4) Route discovery toward a followable identity quickly (the Accounts tab).
+- what_not_to_copy: IG's 3-column edge-to-edge density and zero-gutter look (too busy, too "feed-maxxing" for CosFan's collectible calm); reliance on reels/video tiles that pull toward a TikTok-style consumption loop.
+- risk_notes: Maximum-density discovery can tip into the "doomscroll / hot content" feel CosFan must avoid; and an algorithmic "For you" of unvetted content risks surfacing suggestive imagery. CosFan must keep curation/safety filters on explore and resist full-screen vertical video.
+- MVP_action: Adopt the facet-tabs pattern on CosFan Explore — `For you / Creators / Genres / Events` over a single grid — but render it as a 2-column pastel grid with generous gutters (not IG's 3-col jam). Keep a small content-type badge on tiles (photo set / photocard / post). Always make a tile one tap from the creator profile + follow. Keep safety curation on "For you." Reuse facet tabs + type badges, modify density/palette, avoid the video-first consumption loop.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/43a5a9b0-f63e-4521-968a-05b28dca770c

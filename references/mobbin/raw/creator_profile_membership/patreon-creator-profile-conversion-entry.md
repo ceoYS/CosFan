@@ -1,0 +1,23 @@
+# Reference: Patreon - Creator profile page with "Join for free" + membership conversion entry
+
+- source_app: Patreon (iOS)
+- mobbin_category: Profile / Creator page
+- screen_type: Creator profile landing (logged-out / non-member view)
+- target_cosfan_screen: Creator profile (about + content grid + follow/subscribe) AND membership conversion entry
+- user_job: "I just landed on this creator. Show me who they are, how big/legit they are, and let me follow or join in one tap."
+- first_visible_promise: Full-bleed cover image + large creator name + a single plain-language line ("creating Music Videos"). The promise is identity-first: you instantly know who the creator is and what they make before any ask.
+- primary_cta: "Join for free" — full-width, high-contrast (black) pill directly under the social-proof row. Free-first framing lowers the entry barrier; paid tiers are deferred.
+- secondary_cta: "See membership options" — full-width muted pill immediately below primary. Lets ready-to-pay users branch to tiers without cluttering the primary path.
+- section_order: (1) cover image, (2) creator name, (3) one-line "creating X" descriptor, (4) social-proof stats row "7,451 members · 354 posts · About >", (5) primary CTA Join for free, (6) secondary CTA membership options, (7) locked/teaser content card preview.
+- trust_elements: Member count + post count shown inline ("7,451 members · 354 posts"); "About >" affordance signals there is depth to explore; cover + avatar establish brand legitimacy.
+- friction_removed: Free join removes payment commitment from the first decision; stats answer "is this worth my time" without scrolling; the "About >" link defers long-form reading so the page stays scannable.
+- empty_loading_error_handling: Not shown on this screen (populated creator). Locked teaser card acts as a graceful "you don't have access yet" state rather than hiding content entirely.
+- monetization_exposure: Soft. Money is one layer below the fold — "Join for free" leads, "See membership options" is the paid door. A single locked content card hints at the value behind a paid tier without a hard paywall.
+- onboarding_step: Entry point of the follow→join funnel; first screen a fan sees when discovering a creator.
+- mobile_pattern: Full-width stacked CTA pills, inline stat row with middot separators, sticky-feeling profile header, locked content card with overlay.
+- why_relevant_to_cosfan: This is the canonical "fan lands on a creator" screen. The section order says, in sequence: *who they are* (name + descriptor) → *they're legit* (member/post counts) → *act now, low risk* (Join for free) → *or go deeper* (membership options). It persuades a curious fan by front-loading identity and social proof before any payment fear. The free-first primary CTA is exactly CosFan's "open fan membership" stance — follow/join is welcoming, not transactional.
+- what_to_learn: The two-tier CTA stack (free primary / paid secondary) is highly reusable and keeps CosFan fan-facing rather than PPV. The inline social-proof row is a cheap, powerful trust device. The single locked teaser as the only paywall cue reduces fear ("there's more here") without screaming "pay me." Apply all three to the CosFan creator profile.
+- what_not_to_copy: Patreon's black/utility chrome and "patron" language — too transactional and the wrong aesthetic. Do not copy the exact stat-row wording or composition. CosFan must re-skin to white-first pastel and use fan-friendly language ("members"/"fans", not "patrons").
+- risk_notes: Keep the locked-content teaser feeling collectible/"more to unlock", never adult/PPV. Avoid any per-item unlock pricing on the profile — membership must read as open access to a creator, not pay-per-content.
+- MVP_action: Build the CosFan creator profile header as: cover → avatar+name → one-line tagline → stats row (members · posts) → primary "Follow" or "Join" (free/entry) → secondary "View membership" → a single soft locked teaser. Drives the follow/join action with minimal fear. Reusable as the spine of the profile screen; must-modify the visual language to pastel.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/c02c76d2-255f-433b-9a63-0e9e463bc336

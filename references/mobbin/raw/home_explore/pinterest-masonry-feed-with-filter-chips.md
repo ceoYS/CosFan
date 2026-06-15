@@ -1,0 +1,23 @@
+# Reference: Pinterest - Masonry image feed with filter chips
+
+- source_app: Pinterest (iOS)
+- mobbin_category: Social / Discovery — home feed
+- screen_type: Image-grid home/explore feed (2-column masonry)
+- target_cosfan_screen: Home feed (content from creators you follow) + Explore image-grid browsing
+- user_job: "Show me a calm, scannable wall of visual content so I can graze and tap into what catches my eye, without committing to anything."
+- first_visible_promise: A full-bleed masonry of imagery is the first thing you see — the promise is "there is a lot here worth looking at, and it is all visual." A thin row of filter chips (e.g. `All / Floral / Blue`) sits at the very top, promising "you can narrow this to your taste in one tap."
+- primary_cta: Tap any image tile to open it (implicit, the whole tile is the target). No buttons compete with the image.
+- secondary_cta: Filter/refine chips at top; overflow "..." on each tile for save/hide; bottom tab bar (Home / Search / Notifications / Saved).
+- section_order: 1) Top filter chips (taste refinement) → 2) Masonry grid of tiles (variable height) → 3) per-tile attribution (creator avatar + handle on some tiles) → 4) persistent bottom tab bar.
+- trust_elements: Per-tile creator attribution (small avatar + handle) on a subset of tiles signals "real people made this"; consistent uniform card treatment; no ads interrupting in this view.
+- friction_removed: No text to read before engaging — pure image graze. Variable-height masonry removes the "everything looks the same / boring grid" feeling. Filter chips remove the need to type a search to narrow.
+- empty_loading_error_handling: Tiles load progressively as colored/blurred placeholders that fill in (seen in sibling screens where image blocks render before content) — grid never blocks on a single slow image.
+- monetization_exposure: None visible in this masonry view (sponsored pins appear elsewhere). The browse surface itself is free and unpriced.
+- onboarding_step: N/A — steady-state browsing surface, not onboarding.
+- mobile_pattern: 2-column variable-height masonry; sticky top filter-chip row; full-bleed cards with rounded corners; bottom tab nav; tap-tile-to-expand.
+- why_relevant_to_cosfan: This is the cleanest reference for CosFan's "Cool Pastel Collectible OS" image-first browse. The masonry section says "graze freely," the filter chips say "make it yours," and per-tile attribution quietly says "these are creators, not stock." Persuasion is done by the imagery itself, not by copy or CTAs — exactly the calm, white-first, image-led feel CosFan wants. Friction reduced: no reading, no pricing, no commitment before the tap. It drives the single action CosFan cares about most on home/explore — open a creator's content. Reusable as a structural pattern; must-modify the density and palette (Pinterest runs edge-to-edge and busy; CosFan wants more white gutter and pastel restraint).
+- what_to_learn: (1) Lead with imagery, defer all chrome. (2) Top filter chips are a low-friction taste filter — adopt for CosFan genre/cosplay-character filtering. (3) Variable-height tiles keep a single-content-type grid from feeling monotonous. (4) Keep creator attribution small but present so "follow" is one tap away from the graze.
+- what_not_to_copy: Pinterest's edge-to-edge high density and lack of breathing room; its overflow-heavy "..." save affordances that read as power-user clutter; its brand red. CosFan should be airier and softer.
+- risk_notes: A pure undifferentiated masonry can read as a generic mood-board / shopping-discovery wall. To stay "fan membership" and away from marketplace feel, CosFan must foreground creator identity (avatar/name/follow) and avoid any price or "buy" affordance on tiles.
+- MVP_action: Build CosFan home/explore as a 2-column pastel masonry of creator content tiles with a sticky top chip row (genres: cosplay / idol / photoshoot / by character). Each tile = image + tiny creator avatar+handle overlay; tap opens content, avatar opens creator. No prices, no NFT/serial framing on the browse tile. Add airy white gutters (more than Pinterest) to hit the collectible-not-cluttered feel. Section says "graze"; chips say "your taste"; attribution drives "follow." Reuse structure, modify density + palette, avoid commerce affordances.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/c41c75fe-19ba-4cc8-837c-91628a3bb493

@@ -1,0 +1,23 @@
+# Reference: Threads (& Instagram) - Report status timeline "what happens next"
+
+- source_app: Threads (near-identical Instagram variant exists)
+- mobbin_category: Social / Safety
+- screen_type: Post-report confirmation sheet with a 3-step progress timeline
+- target_cosfan_screen: "What happens after you report" transparency screen (can be the same surface as the confirmation, or a tap-through "report status")
+- user_job: "I reported this — now what? Does anyone actually look at it, and will I hear back?"
+- first_visible_promise: "Thank you, we received your report" headline + a vertical 3-step timeline (Report received -> Awaiting review -> Decision made) with the current step highlighted.
+- primary_cta: "Next" (full-width, brand-blue)
+- secondary_cta: Dismiss
+- section_order: 1) "Thank you, we received your report" -> 2) Step 1 "Report received" (filled dot) — "Your report helps... keeps [app] safe for everyone" -> 3) Step 2 "Awaiting review" (active dot) — "We either use technology or a review team to remove anything that doesn't follow our standards as quickly as possible" -> 4) Step 3 "Decision made" (empty dot) — "We'll send you a notification to view the outcome in your Support Requests" -> 5) Next button
+- trust_elements: A visible pipeline makes moderation feel real and accountable (not a black hole); naming "a review team" reassures that humans may be involved; promising a notification of the outcome closes the loop and signals follow-through; "keeps [app] safe for everyone" frames the reporter as a community helper
+- friction_removed: Pre-empts the #1 post-report question ("then what?") so users don't feel ignored and don't rage-report or churn; the staged timeline manages expectations about timing without committing to a hard SLA
+- empty_loading_error_handling: N/A (it is itself a status/confirmation surface). The "Decision made -> Support Requests" pattern implies a place to check status later.
+- monetization_exposure: None.
+- onboarding_step: N/A
+- mobile_pattern: Bottom sheet, vertical stepper/timeline with connector line and filled/active/empty dots, sticky CTA
+- why_relevant_to_cosfan: Each timeline step answers a worry: "did it arrive?" (received), "will anyone look?" (awaiting review by a team), "will I know the result?" (decision + notification). It persuades the user that the report matters and that CosFan takes safety seriously — the transparency itself is the trust-builder. This directly counters the fear that CosFan might be an unmoderated/unsafe space. The stepper is reusable and modifiable; pair it with the warm confirmation from the NGL reference for the strongest result.
+- what_to_learn: Show moderation as a transparent pipeline (received -> in review -> decision), keep the current stage highlighted, and promise to notify the outcome. This builds trust cheaply without committing to specific timeframes. Give users a place ("Support Requests") to check status.
+- what_not_to_copy: Don't copy Meta's exact step labels, blue palette, dot styling, or "Support Requests" naming. Don't imply a large 24/7 human review team if CosFan can't staff it — soften to "our team reviews reports" honestly.
+- risk_notes: A promised "decision notification" creates an obligation to actually close the loop; if CosFan can't notify every outcome, soften the copy ("we'll review and act"). Avoid implying guaranteed removal.
+- MVP_action: Add a simple 3-step pastel timeline to CosFan's report confirmation (or a tappable "report status"): "Received -> Under review -> Resolved", current step highlighted, with honest copy and (if feasible) an outcome notification. Combine with the reassurance + block-shortcut from the NGL/YouTube refs.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/a292f19e-5d94-4ff2-802e-53025c2c608c (Instagram variant "Thanks for letting us know": https://mobbin.com/screens/d75cd4de-2123-47c4-8777-f289213967d1)

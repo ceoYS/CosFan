@@ -1,0 +1,22 @@
+# Reference: Pinterest - Saved boards (sectioned collection organization)
+- source_app: Pinterest
+- mobbin_category: Discovery / saved-items (iOS)
+- screen_type: Saved-boards hub (collections with sections)
+- target_cosfan_screen: Collection organized into named sets, with optional sub-sections, plus a "recently saved" overflow bucket
+- user_job: "Group everything I save into named boards, see each board's contents at a glance, and have a catch-all for stuff I haven't filed yet."
+- first_visible_promise: "Created / Saved" tab, then a 2-column grid of board tiles, each a large mosaic cover + board name + count ("Maternity Shoot Ideas — 41 Pins"); the breadth of the collection is the promise.
+- primary_cta: Tap a board to open its grid; the most-recent save lands in an "All Pins" / "Quick Saves" catch-all so nothing is lost.
+- secondary_cta: "+" / sort; sectioning within a board ("Cats · 4 Pins · 1 Section"); a top toast confirms moves ("Inspiration is now a section in Cats").
+- section_order: 1) Created/Saved tabs 2) 2-column board-tile grid; each tile = mosaic cover (1 large + small thumbs) + name + pin count + relative time; 3) special "All Pins" / "Quick Saves" buckets pinned near top.
+- trust_elements: Per-board counts and recency stamps, mosaic covers previewing real contents, a guaranteed catch-all bucket so saved items never disappear, gentle confirmation toasts on reorganization.
+- friction_removed: "Quick Saves"/"All Pins" means a fan can save first and organize later (zero upfront filing burden); mosaic covers recall a board's contents without opening; sections allow depth only when wanted; relative timestamps surface freshness.
+- empty_loading_error_handling: Newly created boards show "0 Pins" with light placeholder cover cells; toasts confirm structural changes rather than failing silently.
+- monetization_exposure: None — purely personal curation. Reinforces that a rich collection UI needs no commerce to feel valuable.
+- onboarding_step: N/A.
+- mobile_pattern: Board tiles with asymmetric mosaic covers, count + recency caption, auto "Quick Saves" catch-all, optional in-board sections, confirmation toasts.
+- why_relevant_to_cosfan: Complements the Instagram reference with two extra ideas CosFan should steal: (1) a default "Quick Saves / All Cards" catch-all so fans can collect without being forced to organize — critical for a low-friction, delightful collection; (2) recency stamps that make the collection feel alive ("just added"). Together with mosaic covers + counts, this gives a scalable, white-friendly organization model for a growing photocard collection that still reads as a personal record, not a marketplace.
+- what_to_learn: Reuse the auto catch-all bucket ("All Cards" / "Recently Collected") so saving is frictionless and nothing is lost. Reuse recency stamps to keep the collection feeling active and reward return visits. Reuse counts + mosaic covers for sets. Optionally reuse in-set sections for power collectors. Must-modify: pastel re-skin; default auto-grouping by creator; keep covers as tidy card-mosaics.
+- what_not_to_copy: Pinterest's dense, slightly utilitarian board styling and its discovery/feed mechanics. Don't expose "Created" (publishing) semantics — CosFan collections are private personal records, not public boards to broadcast.
+- risk_notes: Public-board mental model could imply social broadcasting/trading. Frame CosFan sets as private-by-default personal collections; avoid any "share your whole board publicly" affordance that could read as showing off tradeable goods.
+- MVP_action: Add an always-present "All Cards / Recently Collected" catch-all plus recency stamps to the collection, on top of per-creator sets; let fans save instantly and organize optionally. Apply catch-all + recency patterns; pastel re-skin; private by default.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/3a7456a3-4ce5-49f6-80dc-533c7326dd51 (sectioned-board variants: https://mobbin.com/screens/28dc2b36-fcea-438d-9bb6-6915e5063dcd , https://mobbin.com/screens/d08cc804-82d7-435b-bbac-872deea4acf2)

@@ -1,0 +1,23 @@
+# Reference: Discord - "Ignore <user>?" de-escalation sheet
+
+- source_app: Discord
+- mobbin_category: Social / Safety
+- screen_type: Bottom sheet (Ignore user) with effects checklist + escalation escape hatch
+- target_cosfan_screen: Soft "mute / ignore" option as a lighter-than-block step from a profile or message thread
+- user_job: "I want this person to stop bothering me, but I'm not sure I want to fully block them — what's the gentlest thing I can do, and will they know?"
+- first_visible_promise: Avatar with a crossed-out-eye badge + "Ignore Alex?" headline; subhead "Get space without letting them know" frames the action as calm boundary-setting, not punishment.
+- primary_cta: "Ignore" (full-width, brand-purple solid)
+- secondary_cta: "Block instead — Stop direct contact and limit what they view" (a red-tinted escalation row under a "Not enough?" label); plus "Need more info? Explore feature guide" link
+- section_order: 1) Avatar + ignore badge -> 2) "Ignore <name>?" + "get space without letting them know" -> 3) three effect rows with check/info icons (hide their profile & messages — unhide anytime; mute their notifications & activity; they can still message/see you — they won't know they're ignored) -> 4) "Not enough?" divider -> 5) "Block instead" escalation row -> 6) primary Ignore button -> 7) help-guide link
+- trust_elements: "without letting them know" repeated twice (header + an effect row) directly kills the fear of confrontation; honest disclosure that "they can still message you and see your activity" sets correct expectations so the user isn't falsely reassured; "you can unhide them at any time" signals reversibility
+- friction_removed: Offers a low-stakes middle option so users who fear over-reacting still take SOME protective action; the "Block instead" inline escape hatch means choosing wrong here costs zero extra navigation; honest copy removes the need to go research what "ignore" does
+- empty_loading_error_handling: Not shown. (CosFan: confirm with a quiet toast, no celebratory animation — this is a private, calm action.)
+- monetization_exposure: None — safety/boundary tooling is free.
+- onboarding_step: N/A
+- mobile_pattern: Bottom sheet, centered avatar w/ status badge, checklist rows in a card, secondary destructive option visually separated, full-width CTA
+- why_relevant_to_cosfan: This is the gold standard for *graduated, non-punitive* safety. Each section reduces a specific fear: header reduces "will they notice?"; the honest "they can still message you" row reduces the risk of a false sense of security; the "Block instead" row reduces "what if this isn't enough?". It persuades the anxious user (who might otherwise do nothing) to set a boundary by making the lightest action feel safe and reversible, while keeping the stronger action one tap away. For CosFan — where fans may adore a creator but still need space, and creators must manage intensity without drama — a "mute/ignore" tier prevents the all-or-nothing block and keeps the community feeling kind, not policed.
+- what_to_learn: Offer a tiered model: light "Mute/Ignore" -> hard "Block". Pair every soft action with an honest limits statement AND an inline upgrade path to the harder action. Repeat the "they won't be notified" reassurance at the moment of hesitation. Frame as "get space," never as "punish."
+- what_not_to_copy: Don't copy Discord's purple, the exact crossed-eye badge, the wording "Get space without letting them know," or the precise three-row composition. Don't import gamified or guild-specific concepts. Keep CosFan's version pastel and gentle, not dark-mode/edgy.
+- risk_notes: A soft "ignore" must NOT be mistaken by users for real protection from a dangerous person — keep the honest "they can still contact you" line and make Block visually obvious for genuine threats. Avoid surveillance-y framing ("limit what they view").
+- MVP_action: Add a "Mute / Get space" tier to CosFan alongside Block. Sheet: avatar, "Mute @name?", subhead "Get space — they won't be told", 2-3 honest effect rows, a clearly separated "Block instead" row for escalation, and a calm primary button. Confirm quietly. This keeps everyday boundary-setting low-drama while preserving a hard line for real safety needs.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/0acc46bb-ea2c-46aa-b95e-059671116efc

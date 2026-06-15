@@ -1,0 +1,22 @@
+# Reference: adidas Running - Structured event detail (labeled Date/Time/Type rows)
+- source_app: adidas Running (Runtastic)
+- mobbin_category: Fitness / Community (group event detail)
+- screen_type: Structured event detail with labeled info rows + gated join
+- target_cosfan_screen: Event notice detail emphasizing scannable date/time/what-it-is
+- user_job: "Exactly what is this session, on what day, at what time — and what do I need to do to join?"
+- first_visible_promise: A photo of the actual activity (runners), then a bold "05 DEC / FARTLEK THURSDAY" title block that fuses the date into the headline, immediately followed by a clear "Join Event & Community" action with one line of plain-English explanation of the requirement.
+- primary_cta: "Join Event & Community" (full-width dark button with a + icon) — joining the activity, with an honest gating note beneath it.
+- secondary_cta: None prominent; the labeled info rows themselves are the content.
+- section_order: Activity photo -> Big date + title -> Join button -> Requirement explainer ("You have to join this adidas Runners community to be able to join this event.") -> Date row (icon + label + value) -> Time row (icon + label + value) -> Sport Type row (icon + label + value) -> bottom tab bar
+- trust_elements: Plain-language requirement copy sets expectations before the user commits (no surprise gate); consistent icon+label+value rows read as factual and reliable; real activity photo over stock-y illustration.
+- friction_removed: Each fact (Date / Time / Type) is its own labeled, icon-led row — zero parsing effort, very high information density per pixel. The gate is explained in advance so the user isn't bounced by a hidden membership wall.
+- empty_loading_error_handling: Not shown (populated state); but the explicit gate copy is effectively a pre-emptive "you can't join yet because X" message — a good model for a locked/members-only event state.
+- monetization_exposure: None directly (community-gated, not paid here), but the "must join community to join event" pattern maps neatly onto CosFan's "members-only event" concept.
+- onboarding_step: N/A
+- mobile_pattern: Icon + label + value info rows (Date / Time / Sport Type); date fused into the H1; full-width primary action with explanatory subtext directly under it; standard bottom tab nav.
+- why_relevant_to_cosfan: This is the best "information density" exemplar in the group for the practical facts. CosFan event notices must answer date, time, and "what it is" at a glance; the labeled-row pattern does that more legibly than prose. The "join community to join event" gate is a clean, honest template for CosFan's "subscribe to this creator to RSVP/attend a members event" without feeling like a hard paywall slammed in the user's face.
+- what_to_learn: Use labeled icon rows for the hard facts (Date / Time / Location / What it is / Who can join). Explain any gate in one plain sentence before the user hits it. Fuse the date into the title for instant scanability.
+- what_not_to_copy: adidas's black/white sporty brand styling and the dense bottom-tab fitness chrome. Don't copy the community-join wording verbatim. The all-dark, high-contrast look is opposite CosFan's white-first pastel direction — restyle entirely.
+- risk_notes: A visible gate ("you must join X to join this event") is good for honesty but can read as exclusionary or paywall-y if harsh. For CosFan, soften to membership language and make the unlock feel like belonging to the creator's circle, not a transaction toll.
+- MVP_action: Adopt labeled icon rows (Date / Time / Location / What it is / Who can attend) as the core of CosFan's event detail body. For members-only events, show a one-line, friendly "Members of <creator> can RSVP" explainer near the CTA instead of an abrupt wall. Re-skin to pastel/white with soft rows.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/fdaf7dbf-34d1-4610-89ec-96de84bcbd3d

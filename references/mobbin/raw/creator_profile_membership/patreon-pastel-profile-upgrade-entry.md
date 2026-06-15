@@ -1,0 +1,23 @@
+# Reference: Patreon - Pastel creator profile with "Upgrade membership" + locked post
+
+- source_app: Patreon (iOS)
+- mobbin_category: Profile / Creator page (member view)
+- screen_type: Creator profile with subscriber-only content entry point
+- target_cosfan_screen: Creator profile + subscriber-only content entry point
+- user_job: "I follow this creator — show their identity, let me upgrade my membership, and tease the members-only posts I could unlock."
+- first_visible_promise: Circular cosmic cover + large centered name ("Worlds Beyond Number") + plain line ("we play games to make stories out of sound"). Identity and vibe land first; the page leads with personality, not price.
+- primary_cta: "Upgrade membership" — full-width teal pill under the stats row. Frames the paid action as leveling up an existing relationship rather than a cold purchase.
+- secondary_cta: "About >" inline link in the stats row; a pinned/locked post card ("Locked — Fireside Chat…") acts as a soft secondary path into paid content.
+- section_order: (1) circular cover art, (2) centered creator name, (3) one-line descriptor, (4) stats row "36,964 members · 73 posts · About >", (5) Upgrade membership CTA, (6) feed of posts with the first locked/teaser card visible.
+- trust_elements: Large member count (36k) and post count signal an active, established community; pinned post implies ongoing care; recognizable cover art builds brand recall.
+- friction_removed: "Upgrade" language assumes belonging, lowering psychological cost; locked post shows *exactly* what's behind the wall (named content) so the value is concrete, not abstract; About deferred to keep header light.
+- empty_loading_error_handling: Locked post card is the "no access yet" state — content title is shown but body blurred/locked, a graceful partial-reveal instead of a blank wall.
+- monetization_exposure: Medium-soft. One clear upgrade CTA + one named locked post. No prices on the profile itself; pricing lives one tap deeper in the tier sheet. Keeps the profile aspirational, not salesy.
+- onboarding_step: Mid-funnel — for fans who already follow and are being nudged from free to paid.
+- mobile_pattern: Centered circular hero art (distinctive vs. rectangular banners), full-width pill CTA, feed with inline locked-content cards, pinned post.
+- why_relevant_to_cosfan: This is the closest match to CosFan's pastel/collectible mood — soft mint/teal palette, rounded hero, calm density. The section flow persuades an existing follower: *you already belong here* (member count) → *level up* (Upgrade) → *here's the named thing you'd unlock* (locked post). The named locked post reduces the fear "what am I even paying for" by making the reward specific. This is the right model for CosFan's subscriber-only entry point.
+- what_to_learn: The "Upgrade membership" framing (vs. "Subscribe"/"Buy") for already-following fans is reusable and warm. The named-but-locked post card is the single best pattern here — apply it to CosFan's subscriber-only feed so non-members see *what* exists (title/thumbnail) but not the content. The pastel, rounded, centered layout is directly aligned with CosFan's direction.
+- what_not_to_copy: The distinctive circular cosmic artwork and brand identity. Do not replicate the exact feed composition or "Fireside" naming. CosFan should keep its own pastel tokens, not Patreon's teal.
+- risk_notes: A locked content card is fine as "collectible/exclusive"; it must never tip into PPV-per-post pricing or adult-gated framing. Keep the unlock = membership, full stop.
+- MVP_action: For CosFan's subscriber-only entry, show members-only posts as locked cards with visible title + thumbnail + a small lock chip, and an "Upgrade"/"Join membership" CTA in the header. Drives upgrade by making the reward concrete while staying open-membership, not transactional. Reusable layout; must-modify palette and copy.
+- local_reference_path_or_source_pointer: https://mobbin.com/flows/fdde05b8-ae13-4cc1-a4b4-1ce14efad3dc

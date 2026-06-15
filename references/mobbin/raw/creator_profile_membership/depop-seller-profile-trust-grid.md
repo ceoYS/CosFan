@@ -1,0 +1,23 @@
+# Reference: Depop - Seller profile with rating, items-sold, follow, item grid
+
+- source_app: Depop (iOS)
+- mobbin_category: Profile / Seller page
+- screen_type: Creator (seller) profile with trust signals + content grid + follow
+- target_cosfan_screen: Creator profile (about + content grid + follow) — trust-signal layer
+- user_job: "Tell me if this seller is trustworthy and active, show their items, and let me follow them."
+- first_visible_promise: Name + star rating "(6475)" + "ACTIVE TODAY" + items-sold badge sit right under the avatar, so the very first thing communicated is *credibility and recency*, then the item grid shows the goods.
+- primary_cta: "Follow" / "Following" — solid button (blue when not following, green when following), the core relationship action, in the header row.
+- secondary_cta: Message/envelope icon beside Follow; tabs (Shop / Likes / Reviews) act as secondary navigation into proof (Reviews) and curation (Likes).
+- section_order: (1) avatar + name + handle + star rating, (2) activity badges "ACTIVE TODAY · X SOLD", (3) short bio + external link, (4) followers / following counts + Follow button + message icon, (5) Shop/Likes/Reviews tabs, (6) item grid with SOLD overlays.
+- trust_elements: Star rating with review count (headline trust); "ACTIVE TODAY" recency badge; "X SOLD" track-record badge; followers count; a dedicated Reviews tab with per-buyer testimonials; "SOLD" tags on grid items proving real transactions.
+- friction_removed: Rating + sold + active badges resolve "can I trust this person" instantly, before any scroll; Follow is one tap and free; Reviews tab concentrates social proof so it's there if wanted but not forced into the header; SOLD overlays set expectations about availability.
+- empty_loading_error_handling: New/low-activity sellers ("3 followers", one item, rating "(1)") still render the full header; grid shows a single item without breaking — graceful thin state. A "Free shipping on bundles" toast shows a non-blocking promo overlay pattern.
+- monetization_exposure: Indirect — there's no membership here, but the *trust-signal stack* is the transferable asset. Commerce is implied by the item grid, not pushed via a CTA.
+- onboarding_step: Identity + trust step in the discovery funnel, before a fan commits (follow or, in CosFan's case, join).
+- mobile_pattern: Rating + badge cluster under avatar, follower/following + Follow row, segmented tabs including a Reviews tab, content grid with status overlays, non-blocking promo toast.
+- why_relevant_to_cosfan: Depop shows how to make a creator profile feel *trustworthy and active* fast — critical for CosFan, where fans are deciding whether to pay a smaller, less-famous creator. The badge cluster (rating, recency, track record) persuades a cautious fan by reducing the fear "is this creator real / still active / worth my money." A Reviews-style tab and an "active recently" signal would meaningfully de-risk CosFan membership conversion. The grid-with-overlay pattern maps to CosFan content tiles (e.g., a "members-only" or "limited" overlay instead of "SOLD").
+- what_to_learn: The trust badge cluster (rating/reviews, "active recently", track record) is the key reusable idea — fold lightweight versions into CosFan profiles to build confidence in lesser-known creators. The Reviews tab is a reusable social-proof container. Grid overlays are reusable for status (members-only / limited / new).
+- what_not_to_copy: Depop's marketplace/resale framing, "SOLD" commerce semantics, star-rating-of-a-person model (rating individual creators can feel harsh/transactional for a fan-membership app — consider softer signals like "active" + member testimonials instead). Don't copy the chrome or red brand identity.
+- risk_notes: Avoid a literal 5-star "rate this creator" system — it pushes toward a transactional/marketplace feel and away from fan community. Keep trust signals warm (active, member count, fan shout-outs), not commercial. Don't let overlays imply per-item purchase (PPV).
+- MVP_action: Add a lightweight trust layer to CosFan creator profiles — an "active recently" indicator plus member/supporter count, and optionally a fan-testimonial section — to de-risk joining smaller creators. Reuse grid status overlays for "members-only/limited" tiles. Reusable trust pattern; must-modify away from marketplace rating/SOLD semantics toward fan-friendly signals.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/9125618d-6ce3-45d9-9977-27bd9c660492

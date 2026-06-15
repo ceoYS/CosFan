@@ -1,0 +1,22 @@
+# Reference: Saturn Calendar - Event detail anatomy (date / repeat / location / host / link)
+- source_app: Saturn Calendar
+- mobbin_category: Calendar / Scheduling (event detail)
+- screen_type: Compact single-event detail
+- target_cosfan_screen: Event notice detail - compact metadata layout for date/time/location/host
+- user_job: "Give me the key facts of this event in one tight, glanceable card — when, how often, where, who, and any link."
+- first_visible_promise: Emoji + bold event title "Summer school", then a calendar-icon line "Wed, Jul 9 - All Day", a repeat line "Every 2 weeks", a pin line with the location, the host's avatar with a "Host" tag, a short description, a "View Link" row, and a privacy footer — the entire anatomy of an event in one compact, icon-led stack.
+- primary_cta: "Share" (full-width button at the bottom) — spreading the event, an inherently non-commercial action.
+- secondary_cta: "Invite" (pill near attendees); "View Link" (opens external URL); host avatar.
+- section_order: Title (emoji + name) -> Date line (calendar icon) -> Repeat line (recurrence icon) -> Location line (pin) -> Attendees/host (avatars + Invite + "Host" tag) -> Description -> View Link row -> Privacy footer ("Private · Guests can invite others") -> Share button
+- trust_elements: Clear "Host" tag on the organizer avatar; explicit privacy/visibility footer so the user knows who can see/join; recurrence shown plainly; external link surfaced rather than hidden.
+- friction_removed: Every fact is a single icon-led line, so the whole event is absorbed in one glance with no scrolling/parsing. Recurrence is stated ("Every 2 weeks") instead of forcing the user to infer it. Privacy is spelled out so there's no ambiguity about exposure.
+- empty_loading_error_handling: Not shown (populated state); the link row gracefully handles "there's more elsewhere" without embedding it.
+- monetization_exposure: None — this is a pure scheduling/notice screen with zero commerce, the cleanest example of "event = information" in the set.
+- onboarding_step: N/A
+- mobile_pattern: Icon-led metadata stack (calendar / repeat / pin); host-tagged avatar; visibility/privacy footer line; full-width Share action; external link as a tappable row.
+- why_relevant_to_cosfan: Saturn shows the tightest, most legible event metadata stack — exactly the compact "facts card" CosFan needs above the fold on an event notice. The explicit Host tag and privacy footer are directly reusable for showing "who's running this" and "who can see/join," which matters for CosFan's members-only vs public events.
+- what_to_learn: Represent each fact (date, recurrence, location, host, link, visibility) as a single icon-led line for instant scanning. Tag the organizer as "Host." State visibility/privacy explicitly. Surface external links as rows, not embeds. Keep a non-commercial primary action (Share) available.
+- what_not_to_copy: Saturn's deep navy/dark theme — it is the inverse of CosFan's white-first pastel direction, so use the layout/anatomy only, not the palette. Also avoid the "Guests can invite others" mechanic if it could turn a creator's public notice into an uncontrolled invite chain.
+- risk_notes: "Private · Guests can invite others" plus invites could resemble a private-gathering/meetup flow. For CosFan keep events as creator-broadcast announcements; if private/members-only, frame visibility as "Members of <creator>" rather than a personal guest list, and avoid guest-invites-guest chains that feel like a private meetup.
+- MVP_action: Use Saturn's icon-led metadata stack (date / time / location / host / link / visibility) as CosFan's compact above-the-fold event facts. Add a clear creator "Host" tag and an explicit Public vs Members-only visibility line. Convert palette to white + pastel; keep Share as a friendly secondary action.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/ddf86d6f-f33b-469f-9739-04043ea44b74

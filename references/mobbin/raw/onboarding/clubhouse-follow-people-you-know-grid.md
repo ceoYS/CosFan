@@ -1,0 +1,23 @@
+# Reference: Clubhouse - "Let's start by following the people you know" follow grid
+
+- source_app: Clubhouse (iOS)
+- mobbin_category: Onboarding / Following & Subscribing / Selecting & Choosing
+- screen_type: Pre-checked people grid (circular avatars + name) with bulk-accept primary action and a manual-refine secondary
+- target_cosfan_screen: Interest onboarding — bulk follow suggested creators; also reusable for "follow people you know" contacts step
+- user_job: "Get me following the right accounts in one tap instead of making me decide person-by-person."
+- first_visible_promise: Friendly header "Let's start by following the people you know..." — frames the step as low-effort and social, not a chore.
+- primary_cta: "Looks good ->" (accepts the pre-selected set in bulk and moves on).
+- secondary_cta: "or select individually" / "Select all" toggle — lets power users deselect specific people; each avatar also has its own check/+ toggle.
+- section_order: 1) Header -> 2) Multi-row 3-up grid of circular avatars, each pre-checked with a green check (opt-out model) -> 3) Sticky bottom "Looks good ->" primary + "select individually" text affordance.
+- trust_elements: Avatars are real faces of people the user plausibly knows (contact/affinity based), making suggestions feel earned; per-item checks make the bulk action transparent and reversible.
+- friction_removed: Defaults are PRE-SELECTED (opt-out, not opt-in) so the fastest path is a single "Looks good" tap — collapses N decisions into 1. Manual control is available but never required.
+- empty_loading_error_handling: Grid is populated from suggestions so it is not empty; if a user wants none, they can deselect individually before continuing.
+- monetization_exposure: None — pure relationship-building step.
+- onboarding_step: Early onboarding, immediately after identity/contacts, to seed the social graph before first home view.
+- mobile_pattern: Opt-out pre-checked avatar grid, bulk-accept primary CTA, inline per-item toggle, "select individually" escape hatch.
+- why_relevant_to_cosfan: Demonstrates the fastest possible "follow creators" pattern — pre-checking suggestions and offering one-tap bulk accept. It persuades the indecisive or hurried fan by making the default choice the good choice; placed first to guarantee a non-empty feed before the user ever sees Home. The reusable structure (pre-checked grid + "Looks good" + "select individually") is directly transplantable to CosFan's creator-follow step and to a future "follow friends" step.
+- what_to_learn: Consider an opt-out default for clearly-relevant suggestions (e.g. the creator the user searched/clicked to download for, plus close-genre matches) so one tap completes the step. Always pair bulk accept with an obvious individual-refine path. Keep avatars circular and labeled.
+- what_not_to_copy: Pre-checking is powerful but can feel presumptuous if the suggestions are weak or if it silently follows many accounts — only pre-check high-confidence matches, and keep the count visible/honest. Don't copy Clubhouse's exact composition or its drab grey placeholder avatars; render in CosFan white-first + pastel.
+- risk_notes: Auto-following too aggressively risks a "spammy / forced social" feel and erodes trust; cap pre-checked count and make deselect frictionless. For a fan app, avoid pulling in phone contacts without a clear consent screen (privacy + the app must not read as a contacts-harvesting growth hack).
+- MVP_action: Offer a one-tap "Follow these creators" variant: pre-check 3-6 high-confidence suggested cosplayers (white card, pastel-bordered circular avatars, handle + genre), primary "Looks good", secondary "Choose individually". Use sparingly and only when match confidence is high; otherwise default to the opt-in Spotify-style grid.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/0cd92c58-31d8-4f42-be4e-35b4128e9373 (Clubhouse "Let's start by following the people you know...")

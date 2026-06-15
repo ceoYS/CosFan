@@ -1,0 +1,22 @@
+# Reference: Reddit - Collectible avatar / badge detail (rarity + provenance, non-NFT framing)
+- source_app: Reddit
+- mobbin_category: Social / collectibles (iOS)
+- screen_type: Single collectible object detail with metadata
+- target_cosfan_screen: Single photocard / object detail (non-NFT) — emphasis on the "rarity + where it came from" record framing
+- user_job: "See the details of this one collectible I unlocked — how rare it is, when/where I got it — and feel it's a meaningful thing I own."
+- first_visible_promise: The collectible art at top with a "Pinned" toggle, immediately framing it as a personal item you've chosen to feature.
+- primary_cta: "Share" (full-width blue button) — celebratory/social, not commercial.
+- secondary_cta: "Pinned" toggle (feature this item on your profile); tappable rows into related communities.
+- section_order: 1) Collectible art (hero) + "Pinned" 2) Provenance line "Unlocked 1 time. Last unlocked on 29/10/24" 3) Rarity card: "Rare — Rarity" in a soft rounded panel 4) "Your eligible communities" list (where it's usable) 5) "Where you've unlocked it" provenance list with source avatars + date 6) "Share".
+- trust_elements: Explicit rarity tier in its own panel; provenance ("unlocked N times", exact date, source community with avatar); the whole record reads as earned/owned history rather than a market listing. No price, no wallet address.
+- friction_removed: Rarity and provenance are surfaced as clean labelled panels/rows (no jargon, no token IDs); "Pinned" makes showcasing one tap; light theme keeps it friendly and legible.
+- empty_loading_error_handling: Not shown; rows degrade to simple list items.
+- monetization_exposure: None visible — this is the clean, NON-crypto way to present a "rare owned collectible." Critically, it conveys scarcity/rarity and provenance WITHOUT price, bids, contract address, or tradeability. This is the key contrast against the NFT detail screens (Rarible/OpenSea/Meebits) that were discarded.
+- onboarding_step: N/A.
+- mobile_pattern: Collectible hero + pin toggle, rarity panel, provenance list rows with source avatar + date, celebratory full-width Share button, light theme.
+- why_relevant_to_cosfan: This is CosFan's safe blueprint for "rare/limited" energy without the NFT trap. A digital photocard from a creator can have an edition/rarity and an acquisition story ("from [creator]'s June drop, you have #/limited"); Reddit shows how to present exactly that as personal provenance — rarity tier panel + "where/when you got it" rows — so it reads as a treasured RECORD, not a tradeable asset. The "Pinned" / Share actions model fan delight and soft social sharing instead of resale.
+- what_to_learn: Reuse the rarity-tier panel (e.g. "Limited drop", "Standard") and the provenance row ("Acquired from [creator]'s [Event/Drop] on [date]") to give photocards a sense of meaning and scarcity safely. Reuse "Pin/Feature" + Share for fan pride. Must-modify: re-skin to pastel; phrase rarity in collectible/fan terms; show edition like "1 of a limited drop" without implying it can be bought/sold.
+- what_not_to_copy: Reddit's specific avatar/brand styling and community-eligibility mechanic (not relevant). Do NOT import any of the discarded NFT-detail conventions (token ID, contract address, floor price, "Send"/transfer, bids) — those are exactly what CosFan must avoid.
+- risk_notes: Rarity language can drift toward "tradeable/valuable asset." Keep rarity descriptive (drop size, edition) and tied to fandom/provenance, never to monetary value or transferability, so it never reads as crypto or a trading card to be flipped.
+- MVP_action: On photocard detail, add a soft rarity/edition chip + a provenance line ("From [creator] · [Drop name] · [date]") and a "Feature on profile" + Share action. Apply the rarity-and-provenance-as-personal-history model; explicitly exclude price/transfer/marketplace affordances.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/88b939e1-75ea-4216-90a8-7aadf4046f14

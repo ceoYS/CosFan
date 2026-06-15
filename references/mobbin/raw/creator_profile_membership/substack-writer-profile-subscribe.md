@@ -1,0 +1,23 @@
+# Reference: Substack - Writer profile with Subscribe + Follow and recent posts
+
+- source_app: Substack (iOS)
+- mobbin_category: Profile / Publication page
+- screen_type: Creator (writer) profile with subscribe entry + content list
+- target_cosfan_screen: Creator profile (about + content list) + membership conversion entry
+- user_job: "Show me this writer, let me subscribe (paid) or just follow (free), and prove they post regularly."
+- first_visible_promise: Avatar + name + handle + subscriber count ("27K+ subscribers · Links") at top, then the publication card. Promise: a credible person with an audience, and a body of work you can browse right now.
+- primary_cta: "Subscribe" — solid orange button, the paid/primary relationship action, placed left in the button pair.
+- secondary_cta: "Follow" — outlined neutral button beside Subscribe, the free low-commitment alternative; a share icon sits at the end of the row.
+- section_order: (1) avatar + name + handle + subscriber count, (2) action row (Subscribe / Follow / share), (3) publication card "X by <author>" with chevron, (4) tab bar (Activity / Posts / Likes / Reads), (5) chronological post list with title, snippet, thumbnail, date.
+- trust_elements: Subscriber count as headline social proof; named publication card adds a "brand within the person" credibility layer; dated post list with snippets proves cadence and quality; tabs (Likes/Reads) hint at a fuller persona.
+- friction_removed: Subscriber count + recent posts answer "is this worth subscribing" immediately; Follow offers a no-cost way in for the undecided; post snippets let users judge quality without opening each item; tabs organize depth without clutter.
+- empty_loading_error_handling: Minimal profiles (e.g., "3 subscribers", a couple of posts) still render the full structure cleanly; the post list just shows fewer rows — graceful low-content state. (Seen in results.)
+- monetization_exposure: Medium. "Subscribe" is the visual primary (paid), but "Follow" right beside it keeps a free door open. No prices on the profile — the price step is deferred to the subscribe sheet, keeping the profile readable.
+- onboarding_step: Identity + conversion-entry step; where a reader decides between free follow and paid subscribe.
+- mobile_pattern: Subscribe/Follow button pair, publication card, segmented tabs, chronological list with leading text and trailing thumbnail.
+- why_relevant_to_cosfan: Substack nails the free-follow vs. paid-subscribe duality on a content-creator profile, which is exactly CosFan's membership-entry problem. The header persuades by leading with subscriber social proof and a named "publication" (CosFan analog: a creator's membership/series brand). The Subscribe-primary / Follow-secondary pairing converts ready fans while never trapping the curious. The post list with snippets is a strong text-and-thumbnail alternative to a pure grid — useful for CosFan creators who post updates, not just photos.
+- what_to_learn: The dual Subscribe(paid)+Follow(free) button pair is the single most reusable element — it lets CosFan offer membership prominently while keeping following free and frictionless. The dated post list with snippet + thumbnail is reusable for CosFan creator update feeds. Deferring price off the profile keeps the page calm.
+- what_not_to_copy: Substack's orange identity and editorial/newsletter chrome (too text-heavy, wrong mood for a visual collectible app). Don't copy the exact tab labels or list composition. CosFan should lean more visual (thumbnails larger) and pastel.
+- risk_notes: Keep "Subscribe" meaning open membership to a tier, not gated 1:1 access. Avoid making the profile feel like a paywalled newsletter; CosFan's value is collectible/community, not just reading.
+- MVP_action: Give CosFan creator profiles a clear Subscribe/Join (paid, primary) + Follow (free, secondary) button pair under the social-proof header, with a content list below that supports both visual posts and text updates (title + snippet + thumbnail). Drives paid conversion while keeping follow free. Reusable pattern; must-modify visual language and bias toward imagery.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/462ce8d8-8a2d-40fc-8579-ac9ba9b18b03

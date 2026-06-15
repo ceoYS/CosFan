@@ -1,0 +1,22 @@
+# Reference: Nextdoor - Local community event detail (FREE, Going RSVP)
+- source_app: Nextdoor
+- mobbin_category: Local / Community (event post detail)
+- screen_type: Community event detail with RSVP
+- target_cosfan_screen: Creator's event notice with a simple "I'm going" RSVP
+- user_job: "Is this nearby event worth showing up to — when, where, who's hosting, and can I say I'm coming?"
+- first_visible_promise: A clean white card: illustrated banner, then "Thu, Jul 24, 12:00 AM - 1:00 AM" as the very first text line, the event title "Boston Resilience Rewards Launch Party (FREE)" with the free-ness baked into the title, address with a pin, and the host's name + neighborhood + avatar.
+- primary_cta: "Going" — a full-width dropdown selector (expands to Going / Interested / Not Interested) — pure RSVP intent, no payment.
+- secondary_cta: Inline sign-up link ("Learn more and sign up for free here: lu.ma/..."); comment composer with photo/location attach at the bottom.
+- section_order: Banner image -> Date/time line -> Title -> Location (pin + street) -> Host row (avatar + name + neighborhood) -> Body copy with sign-up link -> Attendance count ("1 interested · 1 going") -> "Going" RSVP dropdown -> Comment bar
+- trust_elements: Real host with avatar, name, and neighborhood (local accountability); live social proof "1 interested · 1 going"; "(FREE)" stated plainly; comment thread implies a real, watched, public post.
+- friction_removed: RSVP is a single tap into a 3-option sheet — no form, no checkout. Date/time is the literal first line so the "when" question is answered instantly. The free sign-up link is external and optional, not a wall.
+- empty_loading_error_handling: Attendance shows low real numbers ("1 interested · 1 going") rather than hiding — a graceful low-count state worth emulating instead of faking big numbers.
+- monetization_exposure: None — explicitly free; this is the purest "announcement, not a sale" reference in the group.
+- onboarding_step: N/A
+- mobile_pattern: Full-width RSVP dropdown button; attendance-count microcopy above the CTA; inline comment composer with attach icons; lightweight illustrated banner (no photo required).
+- why_relevant_to_cosfan: This is the strongest model for CosFan's "public creator announcement, not ticketing" mandate. The RSVP dropdown drives a zero-cost action ("I'm going") that's exactly the participation CosFan wants for a shoot/meet. Date-time-first ordering and the honest low attendance count show how to persuade with social proof without inflating it or implying a paid 1:1.
+- what_to_learn: A single "Going / Interested / Not Interested" control is enough to capture intent — no ticket logic needed. Lead with date/time. Show real (even tiny) attendance to build trust. Let an optional external sign-up link carry any heavier registration so the in-app screen stays a clean notice.
+- what_not_to_copy: Nextdoor's neighborhood framing and the "near you" local-proximity emphasis (CosFan events are creator-broadcast to fans, not geo-neighbors — avoid anything that reads like a local meetup/meet-up-with-strangers app). Skip the comment-bar prominence if it invites off-topic noise on a creator's notice.
+- risk_notes: Neighborhood + RSVP + comments could tip toward a "meet local people" / private-meetup vibe, which CosFan must avoid. Keep the host framed as the creator broadcasting publicly, present location as venue info for a public shoot — never as a personal address for a 1:1.
+- MVP_action: Use the RSVP dropdown (Going / Interested / Can't go) as CosFan's event participation control. Put parsed date/time as the first line. Show honest attendance counts. Frame host strictly as the creator; treat location as public-venue info, not a private address.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/52830538-46ab-4432-9980-9162aa8cd761

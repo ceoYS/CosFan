@@ -1,0 +1,22 @@
+# Reference: Eventbrite - Location + About block (map, address, transit)
+- source_app: Eventbrite
+- mobbin_category: Events / Ticketing (event detail - location section)
+- screen_type: Location presentation block within an event detail
+- target_cosfan_screen: The "where" section of a creator's event notice (venue / how to get there)
+- user_job: "Where exactly is this happening, and how do I get there?"
+- first_visible_promise: An "About" header with a short truncated blurb + "Read more", then a clear "Location" header, an embedded map with a single dropped pin labeled with the venue, the venue name in bold, the full street address, and a row of transit-mode icons (car / walk / transit).
+- primary_cta: "Register" (sticky bottom bar, with "Free!" / price on the left) — carried over from the parent detail; the location block itself is informational.
+- secondary_cta: Tap map -> Apple Maps; transit icons imply directions options; "Read more" expands the About copy.
+- section_order: About header -> truncated description + Read more -> Location header -> map with labeled pin -> venue name (bold) -> full address -> transit-mode icons -> (sticky price + Register bar)
+- trust_elements: A real mapped pin + precise address makes the event feel concrete and legitimate (not vague/sketchy); "Maps" attribution; transit options signal a genuine public venue.
+- friction_removed: Address is both visualized (map) and written (copyable text); transit icons pre-answer "how do I get there?"; truncation + "Read more" keeps the screen scannable while the full description stays one tap away.
+- empty_loading_error_handling: Not shown; note that a private/online event would need an alternate state (e.g., "Location shared after RSVP" or "Online event") rather than a map.
+- monetization_exposure: Low here (the block is informational); the persistent "Free!" + Register bar is the only commerce, and it's quiet.
+- onboarding_step: N/A
+- mobile_pattern: Embedded static map with labeled pin; bold-venue + address text pairing; transit-mode icon row; truncate-with-Read-more for long copy; sticky bottom action bar persists across sections.
+- why_relevant_to_cosfan: CosFan event notices must present date/time AND location clearly. This is the cleanest location-block anatomy in the set: map for orientation, written address for action, transit icons for the practical "how do I get there." It also models truncating the "what it is" description so the screen stays light.
+- what_to_learn: Pair a visual map with copyable written address. Add transit/directions affordances. Truncate long descriptions behind "Read more." Keep the participate CTA sticky and calm while the user reads location info.
+- what_not_to_copy: Eventbrite's orange Register button and ticketing framing; the assumption that every event has a public physical address. CosFan must support online / "location revealed to attendees" cases the raw map block doesn't show.
+- risk_notes: Showing an exact pinned address for a creator event could feel unsafe or like a private meetup if mishandled. For CosFan, only show precise venue maps for genuinely public events; for sensitive ones, gate the address behind RSVP/membership or show area-only — never present it like a personal-address rendezvous.
+- MVP_action: Build CosFan's location section as map (public events only) + bold venue + written address + directions affordance, with truncate/Read-more for the description. Add explicit alternate states: "Online event" and "Exact location shared with attendees after RSVP." Restyle map card and pin to fit white/pastel.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/33c3642c-5be8-4d1e-a678-0e965f3167a3

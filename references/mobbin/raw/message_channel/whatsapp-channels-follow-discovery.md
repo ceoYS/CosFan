@@ -1,0 +1,22 @@
+# Reference: WhatsApp - Channels (follow / discovery model)
+- source_app: WhatsApp (iOS)
+- mobbin_category: Messaging / Channels (Updates tab)
+- screen_type: One-to-many channel discovery + follow list (directory of broadcast channels to follow)
+- target_cosfan_screen: 1:N creator message channel — the discovery/entry + follow model that feeds into it
+- user_job: As a fan, I want to find creators/orgs broadcasting updates and follow the ones I care about so their updates land in my feed.
+- first_visible_promise: "Updates" title with a "Channels" section: "Stay updated on topics that matter to you. Find channels to follow below." — sets the mental model that channels are follow-to-receive one-to-many updates (not chats).
+- primary_cta: "Follow" button per channel row
+- secondary_cta: "Find channels to follow" expander; "See all"; "+" to create/add; tap a channel to preview before following
+- section_order: 1) "Updates" header -> 2) Status row (ephemeral, separate) -> 3) "Channels" section header + explainer -> 4) "Find channels to follow" list: each row = avatar + name + verified tick + follower count ("458K followers" / "2.4M followers") + green "Follow" button -> (alt layout) horizontal cards "WhatsApp / Manchester... / Bolavip" each with Follow.
+- trust_elements: Verified ticks on official channels; follower counts as social proof and quality signal; clear separation of Status (personal) vs Channels (broadcast) so users trust what each surface does.
+- friction_removed: One-tap Follow, no request/approval; follower count helps fans decide instantly; channels are opt-in (you only get updates from those you follow), reducing fear of spam; discovery and follow are on the same screen.
+- empty_loading_error_handling: Not shown; directory loads as a list; "See all" handles overflow.
+- monetization_exposure: None on this surface — following is free; this is the top-of-funnel that can later route fans to a creator's paid membership.
+- onboarding_step: This is effectively the channel onboarding/discovery step — fans build their followed-channel set here before consuming the broadcast feed.
+- mobile_pattern: Sectioned list (Status vs Channels); avatar + name + verified + follower-count rows; inline green Follow buttons; horizontal suggestion cards; "See all" overflow.
+- why_relevant_to_cosfan: CosFan needs a way for fans to DISCOVER and FOLLOW a cosplayer's message channel. This screen shows the cleanest opt-in follow model: the explainer copy persuades by clarifying intent ("topics that matter to you"), placed above the list so users grasp the broadcast nature first. Follower counts reduce the "is this creator legit?" fear. The opt-in follow (vs auto-spam) is the exact trust posture CosFan wants.
+- what_to_learn: The Status-vs-Channels split is a strong lesson: keep personal/ephemeral content clearly separate from creator broadcast channels so neither is confused for a DM. Reusable: verified + follower-count channel rows with one-tap Follow, plus a short explainer header. Must-modify into pastel, and likely tie Follow to membership state (some channels free-to-follow, premium ones gated).
+- what_not_to_copy: WhatsApp brand, green Follow color, exact "followers" wording, and the Status/Stories concept itself (CosFan doesn't need 24h ephemeral status). Don't replicate WhatsApp's contact-graph implications.
+- risk_notes: SAFE — no voice/video/call/presence on this surface. Just ensure CosFan's discovery never implies private 1:1 access or "message the creator directly"; frame strictly as "Follow to get updates." No online/active indicators in the directory.
+- MVP_action: Build a "Channels to follow" discovery surface: creator rows with avatar + verified/creator badge + supporter count + a single pastel "Follow" button, under a one-line explainer ("Follow cosplayers to get their updates"). Keep it clearly separate from any DM/inbox concept. Optionally mark some channels as members-only (Follow vs "Join membership"). This becomes the funnel into the broadcast feed.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/31d72e23-5de9-4789-8674-0d4d00d5a060

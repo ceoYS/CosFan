@@ -1,0 +1,23 @@
+# Reference: Depop - Explore home (sectioned feed + "Browse categories")
+
+- source_app: Depop (iOS)
+- mobbin_category: Marketplace — explore home
+- screen_type: Explore landing with a "fresh" sectioned grid and an explicit "Browse categories" entry
+- target_cosfan_screen: Explore landing — fresh content grid plus a doorway into category browsing
+- user_job: "Drop me into something fresh right away, but if nothing grabs me, give me one obvious button to browse by category instead."
+- first_visible_promise: Top tab set `Explore / My DNA / Feed` frames the three modes; below, "FRESH FROM TODAY — New items you'll love, updated daily" leads with an image grid and a "See all"; further down a clear "Browse categories" button. Promise: "fresh stuff now, personalization (My DNA) and your follows (Feed) one tap away, and a categories door if you'd rather browse structured."
+- primary_cta: Tap a grid tile (open content). "Browse categories" button is the secondary primary for structured browsers.
+- secondary_cta: Top tabs (Explore / My DNA / Feed) to switch mode; "See all" on the section; "Browse categories" button; bottom tab nav.
+- section_order: 1) Top mode tabs (Explore / My DNA / Feed) → 2) "Fresh from today" titled grid + "See all" → 3) "Not quite what you're looking for?" prompt → 4) "Browse categories" button → 5) bottom tab nav.
+- trust_elements: "My DNA" (personalization) and "Feed" (your follows) tabs signal the app adapts to you; "updated daily" signals liveness; the polite "Not quite what you're looking for?" line shows the app anticipates a miss and offers a fallback.
+- friction_removed: The "Not quite what you're looking for? → Browse categories" pairing removes the dead-end feeling when the algorithmic grid misses — it hands the user a structured escape. Top tabs remove navigation hunting between discovery / personalized / following.
+- empty_loading_error_handling: The explicit "Not quite what you're looking for?" fallback is effectively a designed "soft empty/mismatch" state baked into a populated screen — a pattern worth stealing. Grid images load progressively.
+- monetization_exposure: HIGH in the broader app (prices, bag, Filter/Sort) — but THIS landing's structure (fresh grid + categories door + mode tabs) is commerce-neutral and reusable if stripped of pricing.
+- onboarding_step: N/A steady-state.
+- mobile_pattern: Top segmented mode tabs; titled "fresh" grid with "See all"; inline "didn't find it?" prompt; full-width "Browse categories" button; bottom tabs.
+- why_relevant_to_cosfan: Gives CosFan a clean three-mode mental model for its top nav of the browse surface — Explore (discover) / personalized / Following — plus a graceful "didn't click? browse by category instead" fallback that most feeds lack. The fresh grid says "always something new," the mode tabs say "we adapt to you," and the categories door says "or take control." Friction reduced: the mismatch fallback keeps users from bouncing. It drives continued browsing and routes undecided users into structured category browse (which seeds creator discovery). Reusable as IA + the fallback pattern; must-modify by removing commerce and renaming modes to fan-native terms.
+- what_to_learn: (1) A simple Explore / For-You / Following tab triad cleanly separates the three browse intents. (2) Build a polite "Not finding it? → Browse categories" fallback directly into the populated feed, not just into a true empty state. (3) "Updated daily" framing to reward returns. (4) One unmistakable full-width door into structured browse.
+- what_not_to_copy: All marketplace chrome (price, bag, Filter/Sort by price, "items"); Depop's dense multi-color grid; the literal label "My DNA" (off-brand for CosFan).
+- risk_notes: Same marketplace-look hazard as other Depop refs — keep only the IA and the fallback pattern; never the pricing/cart chrome. Ensure the "fresh" grid is safety-curated so a fan-facing explore never auto-surfaces suggestive content.
+- MVP_action: Structure CosFan's browse top nav as `Explore / For you / Following` tabs. Lead Explore with a pastel "Fresh today" 2-col content grid + "See all," and bake in a gentle "Not seeing your vibe? Browse by genre" link/button into a curated category hub. No prices/cart on this surface. Reuse the tab triad + the mismatch-fallback pattern, rename to fan terms, strip commerce, keep curation safe.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/5d28da42-cb06-4af9-ac97-238569809e11

@@ -1,0 +1,23 @@
+# Reference: YouTube Studio - Creator dashboard overview with stats cards
+
+- source_app: YouTube Studio (creator-tools app)
+- mobbin_category: Creator / Dashboard
+- screen_type: Admin/creator dashboard overview (header identity + stat cards + recent content list)
+- target_cosfan_screen: 11. ADMIN / OPS — admin dashboard overview for creators
+- user_job: "As a creator, I want to open one screen and instantly see how I'm doing (subscribers, views, recent content performance) and reach my tools from a bottom tab bar."
+- first_visible_promise: Creator avatar + name + "Total subscribers" headline number, then a "Channel analytics (Last 28 days)" block with two stat cards (Views, Watch time), then "Latest published content" with per-item mini-stats — promises an at-a-glance health check.
+- primary_cta: None hard — it's a status overview; the bottom tab bar (Dashboard, Content, Analytics, Comments, Earn) is the action surface to drill into each area.
+- secondary_cta: Tap a stat card → analytics; tap a recent content row (with views/likes/comments counts) → that item; dismissible info banner with "Not now" / "Turn off".
+- section_order: Identity (avatar, name, total subscribers) → Channel analytics card group (Views, Watch time, with time-range label) → Latest published content (rows with thumbnail + per-item view/like/comment counts).
+- trust_elements: Explicit time-range label ("Last 28 days") so numbers are interpretable; zero-states shown honestly (0 subscribers, 0 views) rather than hidden; per-item metrics build a sense of transparency and control.
+- friction_removed: Most-wanted number (subscribers) is the headline; analytics summarized as cards so no report-reading needed; tools one tab away; informational banner is dismissible so it never blocks.
+- empty_loading_error_handling: Strong zero-state — brand-new creator sees the full layout with 0 values (not a blank screen), so the dashboard is legible from day one. (Loading skeletons implied, not shown.)
+- monetization_exposure: Present but contained — "Earn" is one tab among five, not a banner; earnings live in their own space, keeping the overview about performance, not selling.
+- onboarding_step: Doubles as first-run home for a new creator (zero-state legible).
+- mobile_pattern: Mobile creator console: identity header, KPI stat cards in a row, recent-items list with inline metrics, persistent bottom tab bar for tool areas, dismissible top info banner.
+- why_relevant_to_cosfan: This is the right altitude for CosFan's lightweight creator/admin overview — a glanceable home, NOT a heavy SaaS console. The headline-number + KPI-cards + recent-content pattern tells a creator "here's how your page is doing" in one look. The honest zero-state matters because most CosFan creators start small and must still feel oriented. The bottom-tab tool split (overview / content / members / earnings) is a reusable map for CosFan's admin tabs. Persuades by reassurance (you can see everything) and keeps monetization quietly in its own lane.
+- what_to_learn: Lead with the single most-wanted KPI (for CosFan: members/subscribers); summarize performance as a few stat cards with an explicit time range; show recent content with inline per-item metrics; keep tools in a bottom tab bar; design the zero-state to be fully legible.
+- what_not_to_copy: YouTube's video/watch-time metrics, "Studio" branding, red accent, the deep analytics breadth. CosFan admin must stay minimal — do not import YouTube's full creator-analytics surface.
+- risk_notes: Do NOT build a heavy SaaS dashboard — CosFan admin is MVP-lightweight (manage members/content/notices, see basic stats). Avoid vanity-metric overload; pick 2-3 KPIs max. Keep "Earn/earnings" understated so the creator tool reads as page management, not a trading/monetization console.
+- MVP_action: Build CosFan creator overview as: header (avatar + page name + member count headline) → 2-3 KPI cards (Members, New members this week, Posts) with a time-range label → recent posts list with inline reaction/comment counts → bottom tabs (Overview, Content, Members, Notices/Earn). Make the zero-state legible. Reuse the layout; swap in CosFan KPIs and pastel styling.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/4ee1a553-bbfb-4d6b-818e-5deedc455ab2

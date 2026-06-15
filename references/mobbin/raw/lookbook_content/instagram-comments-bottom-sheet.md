@@ -1,0 +1,22 @@
+# Reference: Instagram - Comments bottom sheet (threaded replies + per-comment like + emoji quick-bar)
+- source_app: Instagram (iOS)
+- mobbin_category: Social / comments interaction layer
+- screen_type: Comments bottom sheet over a post — threaded replies, per-comment like with count, emoji quick-reactions, inline composer
+- target_cosfan_screen: Comments thread on a content/lookbook post (the reactions + comments layer)
+- user_job: "Read what people said about this post and quickly add my own reaction or comment."
+- first_visible_promise: A "Comments" sheet slides up over the dimmed post (post stays partially visible at top, preserving context). Top comments show avatar + text + "Reply" + a per-comment heart with count; some are tagged "by author"/"Author" to mark the creator's voice.
+- primary_cta: Per-comment like (heart on the right of each comment) and the inline "Add a comment" composer at the bottom.
+- secondary_cta: "Reply" under each comment, "View N more replies" to expand threads, and a row of one-tap emoji reactions (heart, clap, fire, etc.) above the composer for instant commenting.
+- section_order: 1) dimmed post peeking at top (context retained) -> 2) "Comments" sheet header -> 3) comment rows: avatar + handle + text + "Reply" + per-comment like/count (creator marked "Author") -> 4) "View N more replies" expanders -> 5) emoji quick-reaction strip -> 6) avatar + "Add a comment" composer pinned at bottom.
+- trust_elements: "by author"/"Author" tag highlights the creator's replies (authentic presence), per-comment like counts show which comments resonate, real avatars/handles, threaded structure shows genuine conversation.
+- friction_removed: Bottom sheet keeps the post in context (no full navigation away), emoji quick-bar lets fans comment in ONE tap without typing, per-comment like is a zero-typing affection action, threads collapse by default ("view more") to avoid overwhelm, composer is always pinned.
+- empty_loading_error_handling: (not shown here) — a no-comments state typically shows an encouraging "Be the first to comment" prompt; sends are optimistic (comment appears immediately).
+- monetization_exposure: None — comments are pure community. No paid-reply or tip-in-thread affordance. Clean model for keeping CosFan's conversation layer non-transactional.
+- onboarding_step: N/A.
+- mobile_pattern: Modal bottom sheet retaining parent context, threaded comments with collapse/expand, per-comment like+count, one-tap emoji quick-reaction strip, "Author"-tagged creator replies, pinned composer.
+- why_relevant_to_cosfan: The comments/reactions layer is where CosFan fans express affection cheaply and feel community. The emoji quick-bar DRIVES the lowest-effort action (tap a heart-emoji, no typing), the "Author"-tag PERSUADES by surfacing the creator's presence, threading GIVES structure without clutter, and the bottom-sheet pattern keeps the lookbook image in view so the conversation feels attached to the photo. The fear removed: "commenting is effort / is anyone here?" — answered by one-tap emojis and visible creator replies. Reusable wholesale as CosFan's comment sheet; must modify the emoji set and styling to pastel collectible.
+- what_to_learn: Use a bottom sheet so the post stays in context; offer one-tap emoji quick-reactions to lower the bar to participate; tag the creator's comments distinctly; per-comment likes for fan affection; collapse threads by default; keep a pinned composer.
+- what_not_to_copy: Instagram's exact emoji palette, heart icon, "Author" label wording, and gray density. Re-skin reactions to CosFan's cute/collectible stamps and write its own creator-tag label.
+- risk_notes: Keep reactions and quick-replies affectionate — no "tip", "pay-to-pin", or paid-reply mechanics in the thread. The creator-reply tag must denote a normal public reply, not a paid/private interaction. Moderation: ensure a report/hide affordance so the cute community stays safe.
+- MVP_action: Build the comments layer as a bottom sheet over the post: threaded comments with per-comment pastel reaction + count, a one-tap cute-emoji quick-reaction strip above a pinned composer, and a distinct "Creator" tag on the creator's replies. Threads collapse by default; sends are optimistic; include report/hide for safety.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/f5db6252-33d7-478a-a442-6e0f9f3987d1

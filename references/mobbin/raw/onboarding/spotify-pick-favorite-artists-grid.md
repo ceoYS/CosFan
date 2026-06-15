@@ -1,0 +1,23 @@
+# Reference: Spotify - "Choose 3 or more artists you like" selection grid
+
+- source_app: Spotify (iOS)
+- mobbin_category: Onboarding / Account setup / Selecting & Choosing
+- screen_type: Multi-select entity grid with search; rounded photo avatars + label, threshold-gated progression ("3 or more")
+- target_cosfan_screen: Interest onboarding — pick creators/cosplayers to follow during signup
+- user_job: "Tell the app who I already love so my home feed is instantly worth opening."
+- first_visible_promise: Big bold header "Choose 3 or more artists you like." — states the exact ask and the minimum in one line; no marketing fluff.
+- primary_cta: Implicit advance once the minimum is met (a floating "Next"/done control appears after threshold). On the podcast step the "Done" pill sits over the grid.
+- secondary_cta: Search field pinned under the header to find a specific name not shown; "More in <genre>" tiles to drill into a category instead of scrolling.
+- section_order: 1) Header with explicit minimum -> 2) Search -> 3) Dense 3-column grid of circular artist photos with name labels -> 4) appears-on-threshold advance control. Followed by an analogous podcast-selection step, then a "Great picks!" affirmation animation.
+- trust_elements: Real recognizable artist photography signals "this is the real catalog, not a demo"; the affirmation screen ("Great picks!") rewards the choice and confirms the system heard you.
+- friction_removed: No free-text required; tap-to-select. Search avoids endless scrolling. Threshold ("3 or more") tells users exactly when they can stop — removes "have I done enough?" anxiety. Curated grid means even an undecided user can pick fast.
+- empty_loading_error_handling: Below-the-fold tiles are pre-seeded with popular defaults so the grid is never empty; "More in <category>" provides a fallback path when the surfaced set misses. Selecting shows an immediate check/state change.
+- monetization_exposure: None on the selection step itself; paywall/premium is handled separately elsewhere in the account flow. Personalization stays free and upfront.
+- onboarding_step: Mid onboarding (after account basics, before landing on Home). One of a short chain of "teach the algorithm" steps.
+- mobile_pattern: 3-up circular-avatar tappable grid, sticky search, threshold-gated continue, post-selection affirmation micro-screen.
+- why_relevant_to_cosfan: This is the closest analog to CosFan's core onboarding job — following PEOPLE, not topics. The section says "pick the creators you already stan"; it persuades the new fan who arrived for a specific cosplayer and reassures the browser. Placed early because feed quality on day one depends entirely on it. It reduces the fear of an empty/irrelevant feed. The reusable structure is: explicit minimum + photo grid + search + auto-advance + affirmation.
+- what_to_learn: State the minimum in the header ("Pick 3+ creators to follow"). Use circular creator portraits at a comfortable tap size in a 3-up grid. Add search so a fan can find their niche idol. Auto-advance / show the continue affordance only once the minimum is satisfied. Close with a short positive confirmation so the choice feels rewarded, not transactional.
+- what_not_to_copy: Spotify's all-dark theme is the opposite of CosFan's white-first pastel direction — re-skin to white background with pastel selection states. Do not reuse artist imagery, the Spotify wordmark, or its exact green selection chroma. Avoid stacking too many gated steps back-to-back (Spotify can feel long).
+- risk_notes: Grids of glossy portrait photos can drift toward a "talent catalog / casting" vibe; keep labels as creator handles + genre tag (e.g. "@name · Cosplay") so it reads as fandom, not a model directory. Avoid anything resembling per-person pricing or "book"/"meet" affordances on this screen — that strays toward dating/meetup territory CosFan must avoid.
+- MVP_action: Build "Follow your favorites" as step 2 of onboarding: header with explicit minimum, sticky search, 3-up grid of pastel-bordered circular creator avatars with handle + genre label, tap toggles a check, continue enables at >=3, then a lightweight "Your feed is ready!" affirmation. Pre-seed the grid with popular/featured cosplayers so it is never empty.
+- local_reference_path_or_source_pointer: https://mobbin.com/flows/2ca9968b-a50d-4910-89e7-e894023d7d21 (Spotify Onboarding; "Choose 3 or more artists you like" + podcast select + "Great picks!" screens)

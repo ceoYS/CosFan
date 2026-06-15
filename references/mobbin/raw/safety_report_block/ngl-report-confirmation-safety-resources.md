@@ -1,0 +1,23 @@
+# Reference: NGL - "Message reported" confirmation with safety resources
+
+- source_app: NGL
+- mobbin_category: Social / Anonymous messaging / Safety
+- screen_type: Bottom sheet confirmation after reporting, with follow-on safety actions
+- target_cosfan_screen: Post-report confirmation + reassurance (the "what happens next" screen after a fan/creator reports content or a user)
+- user_job: "I just reported something upsetting — did it work, am I safe, and what else can I do right now?"
+- first_visible_promise: Large green checkmark circle + "Message reported" — instant, unmistakable confirmation that the report landed.
+- primary_cta: Implicit dismiss (X / swipe); the action rows ARE the next steps
+- secondary_cta: Three "Actions of support" rows: "See safety resources", "Block message sender", "Get help from Safety Team"
+- section_order: 1) Green check + "Message reported" headline -> 2) reassurance paragraph ("Thank you for reporting... We will review and take action if there's a violation of the community guidelines") -> 3) "Actions of support" label -> 4) three help rows (safety resources / block sender / contact Safety Team)
+- trust_elements: Green check = success closure (reduces "did it send?" anxiety); "we will review and take action if there's a violation" sets honest expectations without over-promising removal; framing the follow-ups as "Actions of *support*" (not "more enforcement") positions the app as on the reporter's side; an explicit human "Safety Team" contact signals real people care
+- friction_removed: Bundles the three things a shaken user wants next — reassurance, the ability to block the same person without re-navigating, and a path to a human — into one sheet, so no hunting through settings post-report
+- empty_loading_error_handling: This screen IS the success state of the report action. (CosFan: ensure a graceful error state if submit fails — "Couldn't send report, retry".)
+- monetization_exposure: None — safety and the Safety Team are free and unconditional.
+- onboarding_step: N/A
+- mobile_pattern: Bottom sheet, centered success icon, supportive paragraph, stacked action rows with leading icons
+- why_relevant_to_cosfan: The confirmation paragraph reassures ("we'll review"), the "Actions of support" framing reassures (you're supported, not interrogated), and the inline "Block sender" removes friction (no separate trip). It persuades the user that reporting was worth it and that they're now safer — driving the desired outcome of users actually trusting the report system. The "Get help from Safety Team" row is exactly the human-backed signal CosFan needs to prove it's a *safe* space, not an unmoderated adult/anonymous free-for-all. Highly reusable as CosFan's standard post-report screen.
+- what_to_learn: Always confirm a report with a clear success state. Immediately offer (a) reassurance copy, (b) a one-tap Block of the same actor, and (c) a route to human help / safety resources. Use supportive language ("we're here", "support") rather than legalistic or punitive language.
+- what_not_to_copy: Don't copy NGL's red action-row color, its exact icons, or its anonymous-messaging brand tone. Avoid NGL's overall "anonymous secrets" positioning — CosFan must read as wholesome fandom, not edgy anonymity. Don't promise a dedicated 24/7 "Safety Team" unless one exists.
+- risk_notes: Promising human review/"Safety Team" creates an operational obligation — only state what CosFan can actually staff. Keep reassurance honest ("we'll review", not "we'll remove it").
+- MVP_action: Make the CosFan post-report screen: pastel success check + "Report received", one warm reassurance line ("Thanks — our team will review this. You're safe; the user won't know who reported them."), then rows: "Block this user", "See community guidelines", "Contact support". This single screen does the most to make CosFan *feel* safe.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/0932f2c5-3f29-4da3-8042-c85170e7f73f (from flow https://mobbin.com/flows/3db9c1c2-fabd-4096-922e-83de8d69202d "Reporting a user")

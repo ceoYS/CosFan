@@ -1,0 +1,23 @@
+# Reference: Depop - "Sellers to watch" carousel above content grid
+
+- source_app: Depop (iOS)
+- mobbin_category: Marketplace — explore home
+- screen_type: Explore home combining a people/creator carousel with a fresh-content image grid
+- target_cosfan_screen: Home feed + Explore — "creators to follow" rail above a content grid
+- user_job: "Point me at notable creators worth watching first, then let me drop into a stream of fresh visual content."
+- first_visible_promise: A titled "SELLERS TO WATCH — The shops you should know about" rail of large people/creator cards sits at the top, immediately followed by "FRESH FROM TODAY — New items you'll love, updated daily" as a multi-column image grid. Promise: "we will introduce you to people worth following, and there is always something new below."
+- primary_cta: Tap a creator card in the rail (enter their profile) OR tap a grid tile (open content). Dual entry — people first, content second.
+- secondary_cta: "See all" link on the grid section header; horizontal swipe through the creator rail; bottom tab bar (home / search / shop / messages / profile).
+- section_order: 1) "Sellers to watch" titled horizontal creator rail (large cards) → 2) "Fresh from today" titled grid with "See all" → 3) continued grid on scroll → 4) bottom tab nav.
+- trust_elements: The editorial "shops you should know about" framing acts as platform endorsement (curation = trust); large creator cards with imagery humanize the rail; "updated daily" copy signals freshness/liveness.
+- friction_removed: Removes "who is even good here?" by leading with a curated people rail. The "See all" affordance removes feeling boxed-in. Titled sections remove ambiguity about what each block is.
+- empty_loading_error_handling: Grid tiles stream in (sibling Depop screens show progressive image loading and a floating "Filter" pill that stays available while content loads).
+- monetization_exposure: HIGH and explicit elsewhere in Depop — product tiles carry prices, and deeper screens show price/Filter/Sort and shopping-bag chrome. This is the part CosFan must NOT copy.
+- onboarding_step: N/A steady-state.
+- mobile_pattern: Titled horizontal "people" carousel of large cards stacked above a titled vertical image grid; "See all" section action; persistent bottom tabs.
+- why_relevant_to_cosfan: The *structure* — a curated "creators to watch" rail sitting above a fresh-content grid — maps almost 1:1 onto CosFan's home/explore goal of surfacing creators to follow AND their content in one scroll. The rail says "here are people worth your follow" (platform curation persuades), the grid says "and here is the living stream of new drops." Friction reduced: new fans are not dumped into a faceless grid; they get a human entry point first. It drives both "follow a creator" and "open content." Reusable as a layout skeleton; MUST strip Depop's commerce DNA — no prices, no Filter/Sort-by-price, no shopping bag, no "items," reframed as creators + content, not sellers + products.
+- what_to_learn: (1) Lead a discovery home with a curated people rail, then content — gives newcomers a face before a firehose. (2) Editorial section titles ("...you should know about") create trust through implied curation. (3) "Updated daily / Fresh from today" framing rewards return visits. (4) "See all" gives an escape hatch from any capsule section.
+- what_not_to_copy: Everything that reads marketplace — price tags on tiles, Filter/Sort (by price), shopping-bag icon, the word "shops/sellers/items," and the buy-intent framing. Also Depop's busy multi-color grid density.
+- risk_notes: This is the single highest-risk reference for CosFan's "avoid looking like a shopping marketplace" rule. Copying the layout is fine; copying any pricing/cart/sort-by-price chrome would push CosFan straight into the marketplace-checkout look it must avoid. Keep the rail about *fandom/creators*, never about transactions on this surface.
+- MVP_action: Use the skeleton — "Creators to watch" pastel rail of soft creator cards (avatar, name, maybe genre tag, Follow) stacked above a "Fresh today" 2-column content grid with a "See all." Curate the rail editorially for trust. Strictly remove all commerce chrome: no prices, no bag, no Filter/Sort-by-price on this surface (paywall lives on the creator/membership screen, not on explore). Reuse layout, hard-strip marketplace signifiers, reframe sellers→creators and items→content.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/077eb5df-3011-4a04-baf2-b1818c7ad1f8

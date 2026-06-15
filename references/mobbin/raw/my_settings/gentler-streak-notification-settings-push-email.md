@@ -1,0 +1,23 @@
+# Reference: Gentler Streak - Notification settings, grouped Push and Email
+
+- source_app: Gentler Streak (wellness/fitness app)
+- mobbin_category: Settings / Notifications
+- screen_type: Dedicated notification settings screen with two grouped toggle sets (Push, Email)
+- target_cosfan_screen: 10. MY / SETTINGS — notification settings
+- user_job: "I want to control exactly which alerts reach me, and on which channel (push vs email), so I'm not over-notified."
+- first_visible_promise: A focused screen titled "Notifications" with a clear "PUSH" card of per-type toggles and a separate "EMAIL" card (showing the user's email + per-type toggles) — promises full, channel-specific control in one place.
+- primary_cta: None — the screen IS the control surface; each toggle is the action.
+- secondary_cta: Per-type toggles within each channel group (Status Reminders, Special Offers, Monthly/Yearly Recap, Workout Summary, Tips & Tricks for push; News, Tips, Special Offers for email).
+- section_order: PUSH (5 per-type toggles in a grouped card) → EMAIL (email address shown for confirmation, then 3 per-type toggles).
+- trust_elements: Email address displayed in the Email group (confirms WHERE email goes, builds trust); marketing-type toggle ("Special Offers") clearly separated and independently controllable; iOS rounded-card grouping signals a tidy, intentional system.
+- friction_removed: One screen for both channels (no hunting across menus); same toggle pattern reused across groups (learnable once); user sees their email inline without navigating to account.
+- empty_loading_error_handling: Not shown; toggles are instant-state. Stable list, no empty state needed.
+- monetization_exposure: Minimal — "Special Offers" is the only promotional toggle and it's just one switch among functional ones, not a sales pitch.
+- onboarding_step: N/A (settings utility). (Note: a sibling pattern, e.g. Fitbit/Satispay, shows the same toggles as an onboarding step with Save & continue — useful if CosFan wants a notification-opt-in onboarding step.)
+- mobile_pattern: iOS grouped rounded cards, channel as the top-level grouping, per-type toggle rows, contextual value (email) shown inline within its group.
+- why_relevant_to_cosfan: This is the canonical, calm notification-settings layout CosFan should mirror. Channel-first grouping (Push vs Email) answers "where will this reach me?" and per-type toggles answer "what will reach me?" — two clear axes, no overwhelm. Showing the email inline reduces the fear of "where are these going?". The lone "Special Offers" toggle models how to keep marketing opt-in honest and unobtrusive. Highly reusable; near 1:1 structural fit.
+- what_to_learn: Group notifications by channel first, then by type; reuse one toggle row pattern everywhere; show the destination (email) inline for transparency; isolate the marketing/promo toggle so functional alerts feel trustworthy and separate.
+- what_not_to_copy: Gentler Streak's wellness labels (Workout Summary, Status Reminders), green accent, exact card styling, the "Streak" brand framing. CosFan uses its own pastel accent and fan-relevant alert types.
+- risk_notes: Keep marketing/promo notifications OFF by default and clearly labeled, to avoid feeling spammy or like an aggressive monetization funnel. Don't bundle membership/billing alerts with marketing — fans need billing alerts even if they mute promos.
+- MVP_action: Build CosFan notification settings exactly on this skeleton: PUSH card (New posts, Photocard drops, Event/notice, Membership & billing, Promotions[off]) + EMAIL card (show email inline; Receipts/billing, Announcements, Promotions[off]). One reusable toggle row; restyle to pastel.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/33a9da03-3400-445d-9e4e-943e33d1f2de

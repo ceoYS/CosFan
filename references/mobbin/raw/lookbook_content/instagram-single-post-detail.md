@@ -1,0 +1,22 @@
+# Reference: Instagram - Single photo post detail (image + caption + likes + comments)
+- source_app: Instagram (iOS)
+- mobbin_category: Social / Content feed post detail
+- screen_type: Single-photo post in feed, full detail (header, media, action row, caption, comment teaser)
+- target_cosfan_screen: Creator content post / single-photo lookbook detail
+- user_job: "Show me this creator's new cosplay shot and let me react/comment without thinking about it."
+- first_visible_promise: The photo itself, edge-to-edge, immediately below a slim creator header (avatar + handle + verified tick + audio/location line). The image is the hero — no chrome competes with it.
+- primary_cta: Like (heart) — leftmost in the action row, plus double-tap-to-like on the image (animated heart burst).
+- secondary_cta: Comment (speech bubble), Share (paper plane), Save (bookmark, right-aligned). Caption "more" expander; "View all N comments".
+- section_order: 1) creator header row (avatar, handle, verified, audio/location, "..." menu) -> 2) full-bleed photo -> 3) action row (heart / comment / share .... save) -> 4) like count ("96,235 likes") -> 5) caption (handle + text, truncated with "more") -> 6) "View all 339 comments" link -> 7) timestamp -> 8) inline add-a-comment row.
+- trust_elements: Verified badge on creator, real like count and comment count shown openly, human timestamp ("6 days ago"), creator handle repeated in caption byline.
+- friction_removed: Double-tap-to-like (no need to find the button), one-line caption truncation keeps the photo dominant, comment entry is inline (no extra navigation to react). Save is one tap, no folder picker required up front.
+- empty_loading_error_handling: (not shown on this screen) — feed images use blurhash/placeholder fade-in on load; like/save are optimistic (fill instantly, reconcile after).
+- monetization_exposure: None on this screen. Post detail is pure content; monetization lives elsewhere. Good model for keeping CosFan's content view clean of paywall noise when the post is already accessible.
+- onboarding_step: N/A (core loop screen, not onboarding).
+- mobile_pattern: Full-bleed media hero, horizontal action row with count below, truncated caption with inline expand, double-tap gesture, bottom inline comment composer.
+- why_relevant_to_cosfan: This is the canonical "photo is the product" layout. The header SELLS the creator (verified, handle), the action row DRIVES the cheap action (a like costs nothing and is placed first/largest via the gesture), the caption GIVES context, and comments are PROMISED but deferred so the image keeps the spotlight. For a cosplay lookbook where the visual IS the value, this section order (creator -> photo -> react -> read -> talk) is exactly the fan's mental order. The fear it reduces: "is this worth my attention?" — answered instantly by showing the image first and social proof (counts) before asking for anything.
+- what_to_learn: Lead with the image full-bleed; put the lowest-effort action (like/react) first and make it gesture-accessible; show real counts as social proof; truncate captions so media stays dominant; keep the post-detail screen free of any purchase chrome when content is already unlocked.
+- what_not_to_copy: Instagram's exact icon set, the script wordmark, the specific double-tap heart animation styling, and the dense gray-on-white typographic ratios. CosFan should re-skin reactions to its pastel collectible language (cute, not the flat IG heart) and avoid IG's ad-injected feed framing.
+- risk_notes: Keep reactions affectionate/collectible (heart, sparkle, cute stamps) — do NOT drift toward "rate / unlock / tip-to-see" framing on the action row. The action row must read as fan affection, not transaction. Avoid anything that resembles a DM-to-creator CTA that implies paid 1:1.
+- MVP_action: Build the content post detail as: slim creator header (avatar, name, verified) -> full-bleed cosplay photo -> pastel reaction row (react first, then comment, then save) with visible counts -> truncated caption with "more" -> "View all N comments" -> inline comment field. Reactions and save are optimistic + one-tap. No paywall chrome on already-accessible posts.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/2d659583-39e3-49eb-a376-9610fcb97024

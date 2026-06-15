@@ -1,0 +1,22 @@
+# Reference: Substack - Article post detail (title + body + inline captioned image + reactions)
+- source_app: Substack (iOS)
+- mobbin_category: Publishing / long-form post detail
+- screen_type: Article reading view with inline image, image caption, and a pinned like/comment/share action row
+- target_cosfan_screen: Caption-rich content post detail (a lookbook post where the creator writes about the set), and the in-post reaction row
+- user_job: "Let me read this creator's post comfortably, see the photo in context, and react or jump to comments."
+- first_visible_promise: Clean, generously-spaced reading text with the publication/creator name in the nav. As you scroll, an inline image appears with an italic caption beneath it ("Dune"), giving the photo narrative context inside the flow.
+- primary_cta: Like (heart with count, e.g. "26") in the bottom action row.
+- secondary_cta: Comment (bubble + count "9"), Share (export). Tapping comment opens the comments thread.
+- section_order: 1) publication/creator name in nav -> 2) flowing body text (comfortable measure, large line-height) -> 3) inline image -> 4) italic image caption -> 5) continued body -> 6) pinned bottom action row (heart count / comment count / share).
+- trust_elements: Named publication in nav (creator identity), visible like and comment counts as social proof, image captions add editorial credibility, human reading typography signals care.
+- friction_removed: Action row is pinned at the bottom so reacting/commenting never requires scrolling back; image captions remove the "what am I looking at?" question; the reading measure and spacing reduce fatigue so fans actually finish the caption.
+- empty_loading_error_handling: (not shown here) — comments have their own thread screen with first-comment state; long posts render text first, images lazy-load.
+- monetization_exposure: None on this accessible reading view (paid posts are gated at the subscribe layer, similar to Patreon — not per-item). Good reinforcement that an already-accessible post shows pure content + reactions.
+- onboarding_step: N/A.
+- mobile_pattern: Long-form reading layout, inline image with caption, pinned bottom reaction/comment/share bar with live counts.
+- why_relevant_to_cosfan: CosFan posts often pair a cosplay set with a written note ("how I made this wig", "shoot story"). This shows how to GIVE caption + image together: the text SETS UP the photo, the caption LABELS it, and the pinned action row DRIVES the cheap react while keeping comments one tap away. Persuasion is by the creator's voice (the writing) plus visible engagement counts. The fear removed: "is there substance here, or just a pic?" — the readable body and captioned image answer yes. Reusable as the template for caption-forward lookbook posts; must modify the text:image ratio toward image-dominant.
+- what_to_learn: Pair images with captions for context; pin the reaction/comment/share row so engagement is always reachable; show live like/comment counts; use comfortable reading typography for caption-heavy posts.
+- what_not_to_copy: Substack's serif editorial styling, its exact action-row icons, the orange brand, and the text-first dominance (CosFan should keep media as hero). Don't copy its newsletter/subscribe-prompt framing into the content body.
+- risk_notes: Keep reactions affectionate, not transactional. When a post is gated, gate at membership level (don't sprinkle "subscribe to read more" mid-photo in a PPV way). Avoid heavy text walls that bury the cosplay image.
+- MVP_action: Support caption-rich posts: media hero -> optional creator note (readable measure) -> inline captioned images if multiple -> pinned pastel reaction + comment + share bar with live counts. Reading-comfort typography for longer captions; media stays dominant.
+- local_reference_path_or_source_pointer: https://mobbin.com/screens/67ffc0f8-88ee-4185-b071-2bc4ebe19ffa
