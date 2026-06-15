@@ -4,6 +4,13 @@
 **Date:** 2026-06-15
 **Mobbin MCP:** authenticated (`✔ Connected`) and used (iOS, `search_screens` + `search_flows`).
 
+> **⚠️ CORRECTION (2026-06-15):** "design-ready" below refers to **UX/IA pattern** readiness only.
+> The Mobbin **source pointers are provenance only** — they do not reliably open outside the
+> authenticated Mobbin MCP/session and are **not sufficient as Claude Design visual input**. The
+> pack is **NOT READY for Claude Design** until manual screenshots or a Claude-generated visual
+> board exists. See `curated/CLAUDE_DESIGN_INPUT_PACK/PIXEL_CAPTURE_REQUIRED.md` +
+> `MANUAL_SCREENSHOT_QUEUE.md`.
+
 ## Delivered
 - `MOBBIN_REFERENCE_INDEX.md` — 60 benchmark notes across 11 CosFan screen groups.
 - `raw/<group>/*.md` — 60 pattern benchmark notes (text + Mobbin URL pointers only).

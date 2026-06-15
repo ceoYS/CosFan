@@ -8,13 +8,20 @@ core screens without drowning in raw material.
 > input mix (Lookbook/Content was missing from v0). See `../../AUDIT.md`.
 
 **How to use this pack:** for each CosFan screen group below, read the listed benchmark
-notes (paths are relative to this file) and open the Mobbin URLs to study the *pattern*.
-Mine the **structure / IA / information order**, then express it in CosFan's own visual
-language (below). Do **not** reproduce any source's layout, wording, icons, color, or
-brand identity.
+notes (paths are relative to this file) to study the *pattern* — **structure / IA /
+information order** — then express it in CosFan's own visual language (below). Do **not**
+reproduce any source's layout, wording, icons, color, or brand identity.
 
-> No screenshots are saved (policy). Per-reference visual-inspection briefs live in
-> `VISUAL_REFERENCE_MANIFEST.md` — open the Mobbin URL listed there for each screen.
+> **Before Claude Design — read this.** The Mobbin links in this pack are **source pointers /
+> provenance only**. They are **not guaranteed to open outside the authenticated Mobbin
+> MCP/session** (they were tested and do not reliably open) and are **not sufficient as Claude
+> Design visual input**. **Manual screenshot capture or an MCP-derived visual board is required
+> before Claude Design** — see `PIXEL_CAPTURE_REQUIRED.md` and `MANUAL_SCREENSHOT_QUEUE.md`.
+> These notes are an IA/pattern map, not a substitute for pixels.
+
+> No screenshots are saved yet (0 local images). Per-reference visual-inspection briefs live in
+> `VISUAL_REFERENCE_MANIFEST.md`; the Mobbin URLs there are **provenance only** (see the warning
+> above) — not guaranteed to open and not sufficient as Claude Design input.
 > Full index of all 60 references: `../../MOBBIN_REFERENCE_INDEX.md`
 > Raw benchmark notes: `../../raw/<group>/`
 

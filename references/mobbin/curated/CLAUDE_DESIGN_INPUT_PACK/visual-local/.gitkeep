@@ -1,0 +1,11 @@
+# visual-local/ — LOCAL-ONLY manual screenshots (do not commit contents)
+#
+# Drop manually-captured Mobbin reference screenshots here, named per
+# MANUAL_SCREENSHOT_QUEUE.md (e.g. 04-membership-tier-paywall.png).
+#
+# Recommendation (NOT yet applied to .gitignore — edit only on explicit request):
+#   references/mobbin/curated/CLAUDE_DESIGN_INPUT_PACK/visual-local/*
+#   !references/mobbin/curated/CLAUDE_DESIGN_INPUT_PACK/visual-local/.gitkeep
+#
+# Proprietary Mobbin captures must stay local-only and must never be committed.
+# Only a Claude-generated ORIGINAL visual board may be committed (see PIXEL_CAPTURE_REQUIRED.md).

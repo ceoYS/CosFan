@@ -19,3 +19,5 @@ outputs/_local/
 # Mobbin visual captures are local-only reference material.
 references/mobbin/curated/CLAUDE_DESIGN_INPUT_PACK/visual/*
 !references/mobbin/curated/CLAUDE_DESIGN_INPUT_PACK/visual/.gitkeep
+references/mobbin/curated/CLAUDE_DESIGN_INPUT_PACK/visual-local/*
+!references/mobbin/curated/CLAUDE_DESIGN_INPUT_PACK/visual-local/.gitkeep

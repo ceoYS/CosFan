@@ -44,9 +44,12 @@ not a pixel pack.**
 ### Curated references WITH a saved visual (file)
 - None (0 / 26).
 
-### Curated references WITH a source pointer (view-only evidence)
-- All 26 / 26 — every row in `VISUAL_REFERENCE_MANIFEST.md` has a live `mobbin_url`
-  `source_pointer` + a written visual-inspection brief.
+### Curated references WITH a source pointer (provenance only — NOT design input)
+- All 26 / 26 — every row in `VISUAL_REFERENCE_MANIFEST.md` carries a `mobbin_url`
+  `source_pointer` + a written visual-inspection brief. **Provenance only:** these URLs
+  record where each pattern was found; they are **not guaranteed to open outside the
+  authenticated Mobbin MCP/session** (the user verified they do not reliably open) and are
+  **not sufficient as Claude Design visual input**.
 
 ### Curated references WITHOUT any visual evidence at all (no file, no pointer)
 - None.
@@ -55,8 +58,10 @@ not a pixel pack.**
 
 ## 3. Minimum required visual-coverage checklist
 
-Gate = does each core screen group have visual evidence available before Claude Design?
-`source pointer` = live Mobbin URL + inspection brief (viewable). `file` = saved screenshot.
+Gate = does each core screen group have **usable Claude Design visual input** before Claude
+Design? `source pointer` = a Mobbin URL recorded as **provenance only** (not guaranteed to open
+outside the authenticated Mobbin MCP/session, not sufficient as visual input). `file` = a saved
+local screenshot **or** an MCP-derived visual board — the only artifacts that count as input.
 
 | # | Core screen group | Curated refs | Source pointer | Saved file | Status |
 |---|---|---|---|---|---|
@@ -69,28 +74,32 @@ Gate = does each core screen group have visual evidence available before Claude 
 | 7 | Home / explore or onboarding | 1–6 | ✅ | ❌ | pointer-only |
 | 8 | Message channel | 15, 16 | ✅ | ❌ | pointer-only |
 
-**All 8 core groups: source pointer PASS, saved-file FAIL.**
+**All 8 core groups: provenance recorded, but ZERO usable Claude Design visual input**
+(no saved local screenshot, no MCP-derived visual board). Source pointers do not satisfy the gate.
 
 ---
 
 ## 4. Readiness verdict
 
-> ### PARTIAL
+> ### NOT READY for Claude Design
 >
-> Per the rubric: **READY** = saved visual evidence exists for the core 7–8 groups;
-> **PARTIAL** = source pointers exist but image files are missing; **NOT READY** = core
-> groups missing both.
+> Per the corrected rubric: **READY** = usable visual input (saved local screenshots, or an
+> MCP-derived visual board) exists for the core 7–8 groups; **NOT READY** = those groups have
+> only source pointers / written briefs and no saved visual artifact.
 >
 > CosFan has **source pointers + written visual-inspection briefs for all 8 core groups**
-> (and all 26 refs), but **zero saved image files**. That is exactly **PARTIAL**.
+> (and all 26 refs), but **zero saved image files and no MCP-derived visual board**. Source
+> pointers are **provenance only** — **not guaranteed to open outside the authenticated Mobbin
+> MCP/session** and **not sufficient as Claude Design visual input**. That is **NOT READY**.
 
-**Important nuance:** PARTIAL here is the *intended steady state*, not a blocker. The visual
-layer ("Cool Pastel Collectible OS") is CosFan's design-from-scratch differentiation — every
-reference is off-palette at source and must be re-skinned, never reproduced. For a
-**pattern/IA** pack (which is what Claude Design needs), pointer-only evidence is sufficient;
-see `AUDIT.md` ("Claude-Design-READY, conditional"). The screenshot gap only matters if
-someone specifically wants a *pixel* reference pack — and that path is documented (manual,
-licensed, local-only) in the manifest.
+**Correction (supersedes the earlier "PARTIAL is the intended steady state" framing):** the
+earlier audit treated pointer-only evidence as sufficient for a pattern/IA pack and called the
+pack "Claude-Design-ready at the pattern level." That was wrong about the URLs — the user tested
+the Mobbin source pointers and they do **not** reliably open, so they cannot be handed to Claude
+Design as visual input. The written IA/pattern briefs remain valuable, but **manual screenshot
+capture or an MCP-derived visual board is required before Claude Design.** See
+`curated/CLAUDE_DESIGN_INPUT_PACK/PIXEL_CAPTURE_REQUIRED.md` and `MANUAL_SCREENSHOT_QUEUE.md`.
+The "re-skin, never reproduce" point still holds — every reference is off-palette at source.
 
 ---
 
@@ -119,9 +128,13 @@ licensed, local-only) in the manifest.
 ## 6. Recommendation
 
 - **Safe to commit:** `VISUAL_REFERENCE_MANIFEST.md` (updated), `VISUAL_EVIDENCE_AUDIT.md`
-  (this file), `visual/.gitkeep`, and the rest of the markdown collection.
-- **Keep local-only:** any manually-captured Mobbin screenshots (none exist yet).
+  (this file), `PIXEL_CAPTURE_REQUIRED.md`, `MANUAL_SCREENSHOT_QUEUE.md`, `visual/.gitkeep`,
+  and the rest of the markdown collection.
+- **Keep local-only:** any manually-captured Mobbin screenshots (none exist yet) — put them in
+  `curated/CLAUDE_DESIGN_INPUT_PACK/visual-local/` (recommend git-ignoring it; see
+  `PIXEL_CAPTURE_REQUIRED.md`).
 - **Do not commit / do not create:** extracted Mobbin proprietary images.
-- **Next step:** treat the pack as Claude-Design-ready at the **pattern** level. Only pursue
-  manual screenshot capture (manifest §"How to manually capture") if a stakeholder explicitly
-  requires a pixel pack.
+- **Next step (corrected):** the pack is **NOT** Claude-Design-ready as visual input. Source
+  pointers are **provenance only** and are **not sufficient as Claude Design visual input**.
+  Before Claude Design, produce **either** manual screenshots (`MANUAL_SCREENSHOT_QUEUE.md`,
+  12–16 core references) **or** a Claude Code-generated visual board from inline MCP inspection.

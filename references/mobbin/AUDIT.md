@@ -3,12 +3,21 @@
 **Audited:** 2026-06-15 · against `MOBBIN_REFERENCE_INDEX.md` (60 notes) + `curated/CLAUDE_DESIGN_INPUT_PACK/README.md`.
 **Auditor scope:** reference/research documentation only. No app design, no PRD/Spec Kit/code/build changes. Not committed.
 
+> **⚠️ CORRECTION (2026-06-15, supersedes this file's "READY (conditional)" verdict):** the
+> readiness gate below was wrong to accept **source pointers in lieu of screenshots**. The user
+> tested the Mobbin URLs and they do **not reliably open** outside the authenticated Mobbin
+> MCP/session. Source pointers are **provenance only** and are **not sufficient as Claude Design
+> visual input**. **Corrected verdict: NOT READY for Claude Design** until manual screenshots or
+> a Claude-generated visual board exists. See `curated/CLAUDE_DESIGN_INPUT_PACK/PIXEL_CAPTURE_REQUIRED.md`,
+> `MANUAL_SCREENSHOT_QUEUE.md`, and `VISUAL_EVIDENCE_AUDIT.md`. The UX/IA pattern-mining value
+> below still stands; only the "URLs are usable design input" claim is retracted.
+
 ## TL;DR
 
 - **Usable for UX pattern mining:** YES — strong. 60 notes, 11 groups, every note carries a full benchmark schema (MVP action + risk notes + canonical Mobbin URL).
 - **Collection is markdown-only:** YES. **Zero** image files (`*.png/jpg/jpeg/webp/gif`). 464 KB total. This is the *intended* state (policy: no screenshots saved/committed), not a failure → classify as **UX/IA pattern pack, not a full visual/pixel design pack**.
 - **Mobbin MCP screenshot export:** NOT available. `search_screens`/`search_flows` return inline images for *viewing* only; the only MCP resources are two `text/html;profile=mcp-app` galleries. No file/screenshot export. Saving the inline images = copying proprietary Mobbin assets → forbidden by guardrails. → Visual gap is filled by `VISUAL_REFERENCE_MANIFEST.md` (URL pointers), not saved images.
-- **Claude Design readiness:** **READY (conditional).** All 7 required screens (§5) have **source pointers**, which the readiness gate accepts in lieu of screenshots. Caveat: the pastel/collectible *visual expression* has no Mobbin precedent by design and must be designed from first principles.
+- **Claude Design readiness:** **NOT READY (corrected — see banner).** All 7 required screens (§5) have **source pointers**, but source pointers are **provenance only**, do not reliably open outside the authenticated Mobbin MCP/session, and are **not sufficient as Claude Design visual input**. Manual screenshots or a Claude-generated visual board are required first. (Earlier "READY (conditional) — pointers accepted in lieu of screenshots" was wrong.) The pastel/collectible *visual expression* still has no Mobbin precedent by design and must be designed from first principles.
 - **One weakness fixed:** curated pack under-represented **Lookbook / Content (0 vs recommended 2)**. Added 2 refs → pack now **26**.
 - **Commit:** safe to commit the markdown set when asked; nothing to gitignore (no images exist). Not committing now.
 
@@ -127,7 +136,7 @@ Rationale: these two are the *content-consumption* spine (locked → join, unloc
 
 ## 5. Minimum visual coverage gate (before Claude Design)
 
-Gate rule: a required screen passes if the curated pack has **either a screenshot or a source pointer**.
+Gate rule (CORRECTED): a required screen passes **only** if the curated pack has a **saved local screenshot or a Claude-generated visual board**. A source pointer alone is **provenance only** and does **not** pass — the prior "either a screenshot or a source pointer" rule is retracted.
 
 | Required screen | Covered by (pack ref → Mobbin URL) | Pass |
 |---|---|:--:|
@@ -139,7 +148,7 @@ Gate rule: a required screen passes if the curated pack has **either a screensho
 | Event notice detail | Eventbrite free detail + Nextdoor RSVP + adidas rows | ✅ pointer |
 | Home / explore **or** onboarding | Pinterest/Depop/YouTube + Spotify/Yahoo/Flo | ✅ pointer |
 
-**All 7 required screens have source pointers → Claude Design readiness = READY (conditional).**
+**All 7 required screens have source pointers (provenance only) but ZERO saved visuals → Claude Design readiness = NOT READY** until manual screenshots or a Claude-generated visual board exists.
 Conditions to state to Claude Design: (a) it is a *pattern/IA* pack — open the Mobbin URLs in the manifest, do not expect saved screenshots; (b) the **pastel/collectible visual expression is design-from-scratch** (no precedent, by design); (c) obey the hard exclusions on every screen.
 
 ---
@@ -166,4 +175,4 @@ Conditions to state to Claude Design: (a) it is a *pattern/IA* pack — open the
 
 ## Readiness statement
 
-**Reference Collection v0 is a strong, safe UX/IA pattern pack and is READY to seed Claude Design** under the three stated conditions. It is deliberately not a pixel/visual pack; the visual layer is CosFan's own design work. The single coverage weakness (Lookbook/Content) is resolved.
+**Reference Collection v0 is a strong, safe UX/IA pattern pack**, but it is **NOT READY to seed Claude Design as visual input**: its source pointers are provenance only and do not reliably open, and there are no saved screenshots or visual board. It is deliberately not a pixel/visual pack; the visual layer is CosFan's own design work. The single coverage weakness (Lookbook/Content) is resolved. **Before Claude Design, capture manual screenshots (`MANUAL_SCREENSHOT_QUEUE.md`) or generate a visual board (`PIXEL_CAPTURE_REQUIRED.md`).**
